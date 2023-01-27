@@ -1,0 +1,484 @@
+
+:root {
+    --ddc: #00564D;
+    --dlc: #00897B;
+    --bdc: #222222;
+    --blc: #2b2b2b;
+    --bmlc: #3b3b3b;
+    --hrefc: #68B7DE;
+    --hrefconh: #ABD7ED;
+    --red_btn: #f04124;
+}
+
+
+/* TEXT OPTIONS */
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+
+/* BODY SETTING */
+body {
+    background-color: var(--bdc) !important;
+}
+
+
+
+/* HYPERLINKS COLOR */
+a:is(:hover, :focus, :active) {
+    color: var(--hrefconh) !important;
+}
+
+
+
+/* WIDER GRADES */
+td span.grade {
+    width: 45px !important;
+}
+
+
+
+/* CHANGE POINTS VIEW MODE */
+#bp {
+    background: #464646 !important;
+    color: white !important;
+    font-size: 12px !important;
+    text-align: center !important;
+    width: 50px !important;
+}
+
+
+
+/* NAVBAR */
+nav {
+    background: var(--dlc) !important;
+}
+
+
+
+/* NAVBAR DROPDOWN */
+nav ul li.dropdown.open a.dropdown-toggle {
+    background-color: var(--ddc) !important;
+}
+
+nav ul.dropdown-menu a {
+    background-color: var(--dlc) !important;
+}
+
+nav ul.dropdown-menu li.divider {
+    background-color: var(--dlc) !important;
+}
+
+
+/* HYPERLINKS NAVBAR */
+nav ul a:hover {
+    background-color: var(--ddc) !important;
+}
+
+nav ul li.active a { /* after click */
+    background-color: var(--ddc) !important;
+}
+
+nav ul a:focus { /* beteen click and page load */
+    background-color: var(--ddc) !important;
+}
+
+nav a {
+    color: white !important;
+}
+
+nav a:hover {
+    color: white !important;
+}
+
+
+
+/* NOTIFICATIONS MENU */
+div.dropdown-menu-left div{
+    background: var(--blc);
+    color: white !important;
+}
+
+div.dropdown-menu-left div:is(:hover, :focus, :after) {
+    background: var(--bmlc) !important;
+}
+
+div.dropdown-menu-left > * {
+    color: white !important;
+}
+
+
+
+/* BREADCRUMB */
+ul.breadcrumb {
+    background: var(--blc);
+    border-radius: 999px;
+}
+
+@media only screen and (min-width: 768px) {
+    ul.breadcrumb {
+        font-size: 12px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+li a {
+    color: var(--hrefc);
+}
+
+li a:is(:hover, :focus, :active) {
+    color: var(--hrefconh);
+}
+
+li.pull-right a.text-danger {
+    color: var(--red_btn);
+}
+
+li.pull-right a.text-danger:hover {
+    color: var(--red_btn) !important;
+}
+
+ul.breadcrumb li.active {
+    color: white;
+}
+
+ul.breadcrumb a:focus {
+    color: var(--hrefconh);
+}
+
+
+
+/* WELLS */
+div.well {
+    background: var(--blc);
+    border-radius: 15px;
+}
+
+
+
+/* STUPID <a> SEMESTR CHANGER */
+div.well.ng-binding a {
+    display: none;
+    font-size: 0px;
+}
+
+div.well.ng-binding p a {
+    display: block;
+    font-size: 16px;
+    color: var(--hrefc);
+}
+
+
+
+/* RIGHT COLUMN, NEXT LESSONS AND SUBJECT NEWS*/
+tr.ng-scope {
+    background: var(--blc);
+}
+
+span.label {
+    border-radius: 7px !important;
+}
+
+div.col-md-4 div.panel-default {
+    background: var(--blc);
+    border-radius: 15px;
+}
+
+div.panel-body h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+}
+
+table.table-condensed tbody tr td {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px !important;
+}
+
+div.list-group div {
+    background: var(--blc);
+}
+
+div.list-group div:first-child {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+div.list-group div:last-child {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+div.list-group div:only-child {
+    border-radius: 0px;
+}
+
+div.list-group a {
+    color: var(--hrefc);
+}
+
+div.panel-body h4 {
+    margin-left: 5px;
+}
+
+
+
+/* LEFT COLUMN, CLASS POINTS (FIX)*/
+tr.pointer {
+    background: var(--bdc);
+}
+
+
+
+/* MIDDLE COLUMN */
+tr.discussion-label-span {
+    background: var(--bdc);
+}
+
+tr.discussion-label-span.success > td {
+    background: #223322 !important;
+}
+
+td.text-right span {
+    width: 120px !important;
+}
+
+a.pointer {
+    color: var(--hrefc);
+}
+
+
+
+/* MODAL CONTENT */
+div.modal-dialog div.modal-content {
+    background: var(--blc);
+    border-radius: 15px;
+}
+
+div.modal-footer button {
+    background: var(--dlc);
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+}
+
+div.modal-footer button:is(:hover, :focus, :active) {
+    background: var(--ddc) !important;
+}
+
+div.modal-footer a.pull-left {
+    background: var(--bmlc);
+    color: white;
+    border-radius: 10px;
+}
+
+div.row div.badge {
+    background: var(--bmlc) !important;
+    color: white;
+    font-size: 12px;
+}
+
+span.pull-right {
+    background: var(--bmlc) !important;
+    color: white;
+    font-size: 12px;
+}
+
+
+
+/* HOVER OVER MULTIPLE TABLES */
+table.table.table-hover tr:hover td {
+    background-color: #424242 !important;
+}
+
+table.table.table-hover tr:focus td {
+    background-color: #424242 !important;
+}
+
+table.table.table-hover tr.info td {
+    background-color: #424242 !important;
+}
+
+
+
+/* TABLE ACTIVE */
+tr.active td {
+    background: var(--bdc) !important;
+}
+
+
+
+/* SELECT */
+select.input-sm {
+    background: var(--blc);
+    color: white;
+}
+
+
+
+/* GRADES */
+span.grade {
+    border-radius: 4px;
+}
+
+span.grade_1 {
+    background: #7a0c19 !important;
+}
+
+span.grade_2 {
+    background: #df0707 !important;
+}
+
+span.grade_3 {
+    background: #f48c06 !important;
+}
+
+span.grade_4 {
+    background: #80ac5f !important;
+}
+
+span.grade_5 {
+    background: #4f702b !important;
+}
+
+td:has(> span.grade) {
+    text-align: center;
+    font-size: 16px;
+}
+
+td.mvb {
+    font-size: 14px;
+}
+
+
+
+/* STUPID UP ARROW (HATE IT) FROM LEFT SIDE OF SCREEN */
+#to_top {
+    opacity: 0.1;
+}
+
+
+
+/* NEWS PAGE */
+td a.glyphicon-eye-open {
+    color: var(--hrefc);
+}
+
+
+
+/* USER FILES PAGE */
+#tbodyUserFiles a {
+    color: var(--hrefc);
+}
+
+div.pull-right button.btn-info {
+    background-color: var(--dlc);
+    min-width: 60px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-style: none;
+    padding: 6px, 8px;
+}
+
+div.pull-right button.btn-info:is(:hover, :focus, :active) {
+    background-color: var(--ddc) !important;
+    min-width: 60px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-style: none;
+    padding: 6px, 8px;
+}
+
+div.pull-right button.btn-danger {
+    background-color: var(--red_btn);
+    min-width: 60px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-style: none;
+    padding: 6px, 8px;
+}
+
+div.well button.btn-success {
+    background: var(--dlc);
+    border-radius: 10px;
+}
+
+div.well button.btn-success:is(:hover, :focus, :active) {
+    background: var(--ddc) !important;
+    border-radius: 10px;
+}
+
+div.resumable-drop {
+    background: var(--blc);
+    border-radius: 15px;
+    color: white;
+}
+
+div.resumable-drop a u {
+    color: var(--hrefc);
+}
+
+ul.nav-tabs li.active a, ul.nav-tabs li.active a:is(:hover, :focus, :active) {
+    background: var(--bmlc) !important;
+    color: white;
+}
+
+ul.nav-tabs li a:is(:hover, :focus, :active) {
+    background: var(--bmlc) !important;
+    color: white;
+}
+
+
+
+/* LOGIN PAGE */
+div#auth {
+    border-radius: 25px;
+}
+
+div#auth div#authheader {
+    background: var(--dlc);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+div#auth div#authfooter {
+    background: var(--dlc);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+div#auth div#authheader h1{
+    color: white !important;
+    font-size: 32px;
+}
+
+div#auth div#authheader h2{
+    color: white !important;
+    font-size: 16px;
+}
+
+div#auth form#login-form {
+    background: var(--blc);
+}
+
+div#auth div#authfooter h2{
+    color: white !important;
+    font-size: 16px;
+}
+
+input#loginform-rememberme {
+    accent-color: var(--dlc);
+    background-color: var(--bmlc);
+}
+
+button#loginbut {
+    border-radius: 8px;
+    background: var(--dlc);
+    color: white;
+}
+
+input.form-control:is(::placeholder, :placeholder-shown, :hover, :focus, :active, ::backdrop, ::first-line, :valid) {
+    background-color: var(--bmlc) !important;
+    caret-color: var(--bmlc) !important;
+}

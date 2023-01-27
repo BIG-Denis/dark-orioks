@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container" style="width: 400px">
+        <center><h2 style="margin-top: 5px;">Выберите свою тему</h2></center>
+        <div class="form-check">
+            <label class="form-check-label" for="classic">Classic</label>
+            <input class="form-check-input" type="radio" name="theme" id="classic" value="classic" onchange="select_theme(this);" checked>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" for="dark_teal">Dark teal</label>
+            <input class="form-check-input" type="radio" name="theme" id="dark_teal" value="dark_teal" onchange="select_theme(this);">
+        </div>
+    </div>
+    <br>
+</body>
+<script src="js/script.js"></script>
+</html>

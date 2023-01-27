@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Dark teal ORIOKS",
+    "description": "Сделайте свой ОРИОКС красивее и приятнее, избавьтесь от выжигащего глаза своей яркостью белого цвета и острых, как японская катана, углов с помощью этого расширения!",
+    "version": "1.0",
+    "permissions": ["activeTab", "scripting"],
+    "icons": {
+        "16": "assets/images/icon/icon16x16.png",
+        "48": "assets/images/icon/icon48x48.png",
+        "128": "assets/images/icon/icon128x128.png"
+    },
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "assets/images/icon/icon16x16.png",
+            "48": "assets/images/icon/icon48x48.png",
+            "128": "assets/images/icon/icon128x128.png"            
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://orioks.miet.ru/*"],
+            "js": ["js/main.js"],
+            "css": ["assets/css/dark_teal.css"]
+        }
+    ]
+}
