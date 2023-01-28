@@ -26,6 +26,10 @@ body {
 
 
 /* HYPERLINKS COLOR */
+a {
+    color: var(--hrefc);
+}
+
 a:is(:hover, :focus, :active) {
     color: var(--hrefconh) !important;
 }
@@ -178,7 +182,18 @@ tr.ng-scope {
 }
 
 span.label {
-    border-radius: 7px !important;
+    border-radius: 999px !important;
+    font-size: 10px;
+}
+
+span.label-warning {
+    background: #F06449;
+    color: white;
+}
+
+span.label-info {
+    background: #3185FC;
+    color: white;
 }
 
 div.col-md-4 div.panel-default {
@@ -196,21 +211,21 @@ table.table-condensed tbody tr td {
     font-size: 13px !important;
 }
 
-div.list-group div {
+div.list-group div.list-group-item {
     background: var(--blc);
 }
 
-div.list-group div:first-child {
+div.list-group div.list-group-item:first-child {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
 
-div.list-group div:last-child {
+div.list-group div.list-group-item:last-child {
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 
-div.list-group div:only-child {
+div.list-group div.list-group-item:only-child {
     border-radius: 0px;
 }
 
@@ -313,6 +328,7 @@ tr.active td {
 select.input-sm {
     background: var(--blc);
     color: white;
+    border-radius: 5px !important;
 }
 
 
@@ -363,6 +379,19 @@ td.mvb {
 /* NEWS PAGE */
 td a.glyphicon-eye-open {
     color: var(--hrefc);
+}
+
+div.container.margin-top div.well > * {
+    color: white !important;
+}
+div.container.margin-top div.well > * > * {
+    color: white !important;
+}
+div.container.margin-top div.well > * > * > * {
+    color: white !important;
+}
+div.container.margin-top div.well > * > * > * > *{
+    color: white !important;
 }
 
 
@@ -473,12 +502,96 @@ input#loginform-rememberme {
 }
 
 button#loginbut {
-    border-radius: 8px;
+    border-radius: 10px;
     background: var(--dlc);
     color: white;
 }
 
 input.form-control:is(::placeholder, :placeholder-shown, :hover, :focus, :active, ::backdrop, ::first-line, :valid) {
     background-color: var(--bmlc) !important;
-    caret-color: var(--bmlc) !important;
+    border-radius: 10px;
+}
+
+div.baseRow div.alert.alert-danger {
+    background-color: #3c2b2b;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+div.baseRow div.alert.alert-danger{
+    background-color: #3c2b2b;
+}
+
+
+
+/* RESOURCES PAGE */
+div.list-group div.list-group-item.bg-grey.pointer {
+    border-radius: 15px;
+}
+
+div.panel-collapse > div:first-child {
+    border-top: none !important;
+}
+
+div.list-group div.panel-collapse > div:is(:hover, :focus, :active) {
+    background: var(--bmlc) !important;
+}
+
+div.list-group div.panel-collapse div div span.label.label-default {
+    background-color: var(--blc);
+    color: white;
+}
+
+div.list-group div.panel-collapse div div span.label.label-success {
+    background-color: #223322;
+    color: white;
+}
+
+
+
+/* FAQ (IN NEWS) PAGE */
+div.search-form {
+    border-radius: 15px;
+}
+
+select#faqcategory-category {
+    background: var(--blc);
+    color: white;
+    border-radius: 5px;
+}
+
+input#faqcategory-key_words {
+    background: var(--blc);
+    color: white;
+    border-radius: 5px;
+}
+
+button.btn.btn-primary {
+    background: var(--dlc);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+button.btn.btn-primary:is(:hover, :focus, :active) {
+    background: var(--ddc);
+    color: white;
+    border-radius: 10px;
+}
+
+div.panel-group#accordion div.panel.panel-default{
+    background: var(--blc) !important;
+    color: white !important;
+    border-radius: 15px;
+}
+
+div.panel-group#accordion div.panel.panel-default div.panel-heading {
+    background: var(--blc);
+    color: white;
+    border-radius: 13px;
+}
+
+div.panel-group#accordion div.panel.panel-default div.panel-collapse:is(:hover, :focus, :active) {
+    background-color: var(--blc) !important;
 }
