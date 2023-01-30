@@ -30,7 +30,7 @@ a {
     color: var(--hrefc);
 }
 
-a:is(:hover, :focus, :active) {
+* > a:is(:hover, :focus, :active) {
     color: var(--hrefconh) !important;
 }
 
@@ -136,14 +136,6 @@ li a:is(:hover, :focus, :active) {
     color: var(--hrefconh);
 }
 
-li.pull-right a.text-danger {
-    color: var(--red_btn);
-}
-
-li.pull-right a.text-danger:hover {
-    color: var(--red_btn) !important;
-}
-
 ul.breadcrumb li.active {
     color: white;
 }
@@ -171,7 +163,7 @@ div.well.ng-binding a {
 div.well.ng-binding p a {
     display: block;
     font-size: 16px;
-    color: var(--hrefc);
+    color: var(--hrefc) !important;
 }
 
 
@@ -235,6 +227,10 @@ div.list-group a {
 
 div.panel-body h4 {
     margin-left: 5px;
+}
+
+div.panel.panel-default.ng-scope div.panel-body table.table.table-borderless.table-condensed tbody tr:is(:hover, :focus, :active) {
+    background: var(--blc) !important;
 }
 
 
@@ -431,6 +427,7 @@ div.pull-right button.btn-danger {
 div.well button.btn-success {
     background: var(--dlc);
     border-radius: 10px;
+    border: none;
 }
 
 div.well button.btn-success:is(:hover, :focus, :active) {
@@ -594,4 +591,17 @@ div.panel-group#accordion div.panel.panel-default div.panel-heading {
 
 div.panel-group#accordion div.panel.panel-default div.panel-collapse:is(:hover, :focus, :active) {
     background-color: var(--blc) !important;
+    border-radius: 15px;
+}
+
+table.table.table-condensed tbody tr:is(:hover, :focus, :active) {
+    background: var(--bmlc);
+}
+
+table.table.table-condensed tbody tr td.collapser a.newColor {
+    color: var(--hrefc);
+}
+
+table.table.table-condensed tbody tr.collapse td a {
+    color: var(--hrefc);
 }
