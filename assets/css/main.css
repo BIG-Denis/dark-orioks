@@ -1,0 +1,6 @@
+
+/* STUPID <a> SEMESTR CHANGER */
+div.well.ng-binding a {
+    display: none;
+    font-size: 0px;
+}

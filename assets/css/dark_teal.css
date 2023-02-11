@@ -17,6 +17,25 @@
     color: white;
 }
 
+input[type="text"]:is(::placeholder, :placeholder-shown, :hover, :focus, :active, ::backdrop, ::first-line, :valid) {
+    background-color: var(--bmlc) !important;
+    color: white;
+    border-radius: 10px;
+}
+
+select {
+    background: var(--bmlc) !important;
+    color: white !important;
+    border-radius: 5px !important;
+}
+
+textarea {
+    background: var(--blc) !important;
+    color: white !important;
+    border-radius: 5px;
+}
+
+
 
 /* BODY SETTING */
 body {
@@ -155,11 +174,6 @@ div.well {
 
 
 /* STUPID <a> SEMESTR CHANGER */
-div.well.ng-binding a {
-    display: none;
-    font-size: 0px;
-}
-
 div.well.ng-binding p a {
     display: block;
     font-size: 16px;
@@ -386,7 +400,7 @@ div.container.margin-top div.well > * > * {
 div.container.margin-top div.well > * > * > * {
     color: white !important;
 }
-div.container.margin-top div.well > * > * > * > *{
+div.container.margin-top div.well > * > * > * > * {
     color: white !important;
 }
 
@@ -400,8 +414,8 @@ div.container.margin-top div.well > * > * > * > *{
 div.pull-right button.btn-info {
     background-color: var(--dlc);
     min-width: 60px;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     border-style: none;
     padding: 6px, 8px;
 }
@@ -409,8 +423,8 @@ div.pull-right button.btn-info {
 div.pull-right button.btn-info:is(:hover, :focus, :active) {
     background-color: var(--ddc) !important;
     min-width: 60px;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     border-style: none;
     padding: 6px, 8px;
 }
@@ -418,8 +432,8 @@ div.pull-right button.btn-info:is(:hover, :focus, :active) {
 div.pull-right button.btn-danger {
     background-color: var(--red_btn);
     min-width: 60px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     border-style: none;
     padding: 6px, 8px;
 }
@@ -568,7 +582,7 @@ button.btn.btn-primary {
     background: var(--dlc);
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 button.btn.btn-primary:is(:hover, :focus, :active) {
@@ -604,4 +618,80 @@ table.table.table-condensed tbody tr td.collapser a.newColor {
 
 table.table.table-condensed tbody tr.collapse td a {
     color: var(--hrefc);
+}
+
+
+
+/* HOMEWORK PAGE */
+a.btn.btn-success {
+    background: var(--dlc);
+    border-radius: 5px;
+    color: white;
+    border-style: none;
+}
+
+a.btn.btn-success:is(:hover, :focus, :active) {
+    background: var(--ddc) !important;
+}
+
+span.bootstrap-switch-label {
+    background-color: var(--blc) !important;
+}
+
+span.bootstrap-switch-handle-on.bootstrap-switch-primary {
+    background: #3185FC !important;
+}
+
+span.bootstrap-switch-handle-off.bootstrap-switch-default {
+    background: #F06449 !important;
+    color: white !important;
+}
+
+button.btn-xs#collapseAll {
+    background: var(--blc);
+    color: white;
+    border-radius: 5px;
+}
+
+button.btn.btn-success {
+    background: var(--dlc);
+    border-radius: 5px;
+    color: white;
+    border-style: none;
+}
+
+button.btn.btn-success:is(:hover, :focus, :active) {
+    background: var(--ddc) !important;
+}
+
+
+
+/* PROJECT WORK PAGE */
+div#ui-datepicker-div {
+    background-color: var(--blc);
+    color: white;
+}
+
+table.ui-datepicker-calendar {
+    background: var(--blc);
+}
+
+table.ui-datepicker-calendar tbody tr td a {
+    background: var(--bmlc) !important;
+    color: white !important;
+}
+
+div.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+    background: var(--bmlc);
+}
+
+form#w0 a.btn.btn-secondary {
+    background: var(--bmlc);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+}
+
+div#ui-datepicker-div {
+    background: var(--blc) !important;
 }
