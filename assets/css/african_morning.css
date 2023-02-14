@@ -1,30 +1,30 @@
 
 :root {
-    --ddc: #00564D;
-    --dlc: #00897B;
-    --bdc: #222222;
-    --blc: #2b2b2b;
-    --bmlc: #3b3b3b;
-    --hovergrayc: #424242;
-    --borderc: #e8e8e8;
-    --hrefc: #68B7DE;
-    --hrefconh: #ABD7ED;
-    --textcolor: white;
-    --smallrnd: 5px;
-    --medrnd: 10px;
-    --bigrnd: 15px;
+    --ddc: #663b49;
+    --dlc: #835162;
+    --bdc: #192123;
+    --blc: #21292b;
+    --bmlc: #293133;
+    --hovergrayc: #312730;
+    --hrefc: #81B8EF;
+    --hrefconh: #629dd8;
+    --textcolor: #ffffff;
+    --borderc: var(--textcolor);
+    --smallrnd: 3px;
+    --medrnd: 5px;
+    --bigrnd: 10px;
     --largernd: 25px;
     --infrnd: 999px;
-    --darkgreenc: #223322;
-    --darkredc: #332222;
-    --addbluec: #3185FC;
-    --addredc: #F06449;
+    --darkgreenc: #2b3a2e;
+    --darkredc: #812A00;
+    --addbluec: #007C45;
+    --addredc: #A13D63;
     --grade1c: #7a0c19;
     --grade2c: #df0707;
     --grade3c: #f48c06;
     --grade4c: #80ac5f;
     --grade5c: #4f702b;
-    --alertc: #3c2b2b;
+    --alertc: var(--darkredc);
 }
 
 
@@ -223,7 +223,7 @@ div.notification-more.notification-more-all:is(:hover, :focus, :active) {
 /* BREADCRUMB */
 ul.breadcrumb {
     background: var(--blc);
-    border-radius: var(--infrnd);
+    border-radius: var(--bigrnd);
     /* border-color: var(--borderc); */
 }
 

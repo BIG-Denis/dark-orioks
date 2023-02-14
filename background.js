@@ -1,5 +1,7 @@
 let theme_names = {
-    1: "dark_teal"
+    1: "dark_teal",
+    2: "african_morning",
+    3: "theme"
 };
 
 chrome.runtime.onInstalled.addListener(function() {

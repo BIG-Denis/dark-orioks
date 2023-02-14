@@ -1,0 +1,10 @@
+div.settings {
+    float: left;
+    text-align: left;
+    width: 250px;
+}
+
+h2.header {
+    margin-bottom: 12px;
+    left: 0;
+}

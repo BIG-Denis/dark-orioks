@@ -1,4 +1,3 @@
-
 $(function() {
     chrome.storage.sync.get("theme", function (opt) {
         $("#theme").val(opt.theme ? opt.theme : 0).selected = true;
@@ -10,9 +9,7 @@ $(function() {
         chrome.storage.sync.set({"theme": theme}, function() {});
         if (theme > 0) {
             let theme_names = {
-                1: "dark_teal",
-                2: "african_morning",
-                3: "theme"
+                1: "dark_teal"
             };
             chrome.scripting.updateContentScripts([{
                 id: "content-scripts",
@@ -32,22 +29,4 @@ $(function() {
             }
         });
     });
-});
-
-
-
-
-$(function() {
-    function openVK() {
-        window.open('https://vk.com/unsigned_int','_blank');
-    }
-    
-    function openGithub() {
-        window.open('https://github.com/BIG-Denis/dark-orioks','_blank');
-    }
-
-    buttons = document.getElementsByClassName("logobtn");
-
-    buttons[0].onclick = openVK;
-    buttons[1].onclick = openGithub;
 });

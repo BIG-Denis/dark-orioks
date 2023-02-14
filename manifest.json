@@ -1,10 +1,21 @@
 {
     "manifest_version": 3,
-    "name": "Dark teal ORIOKS",
-    "description": "Сделайте свой ОРИОКС красивее и приятнее, избавьтесь от выжигащего глаза своей яркостью белого цвета и острых, как японская катана, углов с помощью этого расширения!",
+    "name": "Dark ORIOKS",
+    "description": "Сделайте свой ОРИОКС красивее и приятнее, избавьтесь от выжигащего глаза своей яркостью белого цвета и острых, как арабская пища, углов с помощь этого расширения! Смена семестров без необходимости нажатия отдельной кнопки <сменить>, отдельная ссылка на страницу расписания прямо в ОРИОКСе и многое другое в подарок!",
     "version": "1.0",
     "permissions": ["activeTab", "tabs", "scripting", "storage"],
     "host_permissions": ["https://orioks.miet.ru/*"],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "fonts/*.ttf"
+            ],
+            "matches":
+            [
+                "<all_urls>"
+            ]
+        }
+    ],
     "icons": {
         "16": "assets/images/icon/icon16x16.png",
         "32": "assets/images/icon/icon32x32.png",
@@ -14,7 +25,6 @@
     "background": {
         "service_worker": "background.js"
     },
-    "options_page": "options.html",
     "action": {
         "default_popup": "popup.html",
         "default_icon": {

@@ -18,6 +18,8 @@ if (select !== null) {
 let down_list = getElementByXpath("/html/body/nav/div/div[2]/ul[2]");
 
 let li = document.createElement("li");
-li.innerHTML = '<a href="https://www.miet.ru/schedule"> Расписание';
+li.innerHTML = '<a href="https://www.miet.ru/schedule" target="_blank" id="linkschedule"> Расписание';
 
-down_list.prepend(li);
+if (down_list){
+    down_list.prepend(li);
+}
