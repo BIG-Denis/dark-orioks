@@ -38,8 +38,9 @@ div.container {
     border: 5px solid #646464;
 }
 
-h2.header {
+h2 {
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 p.warning-text {

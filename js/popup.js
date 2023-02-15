@@ -1,10 +1,18 @@
 
+let theme_descs = {
+    0: "Классический, чересчур яркий, скучный и всем надоевший ОРИОКС с плохо читаемым текстом и некрасивым шрифтом.",
+    1: "Классика тёмных тем: стильный, чёткий, стройный, с изящными скруглёнными углами. Выбор серьёзного мужчины.",
+    2: "Тёмный синеватый фон, напоминающий южное море, и приятный, как восход утреннего солнца, розовый - теперь смотреть на Африканское побержье и баллы в ОРИОКС'е можно одновременно.",
+    3: "Бар - место, которым оканчивается каждая учебная неделя. Теперь он не только неоновый, но и всегда с вами, как в вашем сердце, только в ОРИОКС'е."
+};
+
+
 $(function() {
     chrome.storage.sync.get("theme", function (opt) {
         $("#theme").val(opt.theme ? opt.theme : 0).selected = true;
     });
-
     let select = $("#theme");
+    let theme = select.val();
     select.change(function () {
         let theme = select.val();
         chrome.storage.sync.set({"theme": theme}, function() {});
@@ -26,6 +34,7 @@ $(function() {
                 css: ["assets/css/main.css"]
             }]);
         }
+        $("#description").html(theme_descs[theme]);
         chrome.tabs.query({url: "https://orioks.miet.ru/*"}, function (tabs) {
             for (let i = 0; i < tabs.length; i++) {
                 chrome.tabs.reload(tabs[i].id);
@@ -35,6 +44,13 @@ $(function() {
 });
 
 
+$(function() {
+    window.onload = function() {
+        let select = $("#theme");
+        let theme = select.val();
+        $("#description").html(theme_descs[theme]);
+    }
+});
 
 
 $(function() {
