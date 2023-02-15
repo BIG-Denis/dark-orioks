@@ -840,3 +840,27 @@ div.alert.alert-danger {
     border-style: none;
     font-size: 16px;
 }
+
+
+
+/* THEME EXTRAS */
+tr.success.ng-scope,
+tr.success.ng-scope td {
+    background: var(--darkgreenc) !important;
+}
+
+tr.discipline_checkboxes.ng-scope {
+    background: transparent;
+}
+
+div.panel.panel-default {
+    background: transparent;
+    border-radius: var(--medrnd);
+}
+
+div.panel-heading.click {
+    background: var(--blc);
+    color: var(--textcolor);
+    border-top-left-radius: var(--medrnd);
+    border-top-right-radius: var(--medrnd);
+}
