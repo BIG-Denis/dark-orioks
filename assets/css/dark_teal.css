@@ -442,23 +442,23 @@ span.grade {
 }
 
 span.grade_1 {
-    background: #7a0c19 !important;
+    background: var(--grade1c) !important;
 }
 
 span.grade_2 {
-    background: #df0707 !important;
+    background: var(--grade2c) !important;
 }
 
 span.grade_3 {
-    background: #f48c06 !important;
+    background: var(--grade3c) !important;
 }
 
 span.grade_4 {
-    background: #80ac5f !important;
+    background: var(--grade4c) !important;
 }
 
 span.grade_5 {
-    background: #4f702b !important;
+    background: var(--grade5c) !important;
 }
 
 td:has(> span.grade) {

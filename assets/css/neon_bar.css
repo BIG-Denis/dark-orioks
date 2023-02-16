@@ -455,23 +455,28 @@ span.grade {
 }
 
 span.grade_1 {
-    background: #7a0c19 !important;
+    background: var(--grade1c) !important;
+    box-shadow: 0 0 5px var(--grade1c);
 }
 
 span.grade_2 {
-    background: #df0707 !important;
+    background: var(--grade2c) !important;
+    box-shadow: 0 0 5px var(--grade2c);
 }
 
 span.grade_3 {
-    background: #f48c06 !important;
+    background: var(--grade3c) !important;
+    box-shadow: 0 0 5px var(--grade3c);
 }
 
 span.grade_4 {
-    background: #80ac5f !important;
+    background: var(--grade4c) !important;
+    box-shadow: 0 0 5px var(--grade4c);
 }
 
 span.grade_5 {
-    background: #4f702b !important;
+    background: var(--grade5c) !important;
+    box-shadow: 0 0 5px var(--grade5c);
 }
 
 td:has(> span.grade) {
@@ -521,24 +526,26 @@ div.container.margin-top div.well > * > * > * > * {
     color: var(--hrefc);
 }
 
-div.pull-right button.btn-info,
-div.pull-right button.btn-info:is(:hover, :focus, :active) {
+div.pull-right button.btn-xs.btn-info.link,
+div.pull-right button.btn-xs.btn-info.link:is(:hover, :focus, :active) {
     background-color: var(--addbluec);
     min-width: 60px;
     border-top-left-radius: var(--smallrnd);
     border-bottom-left-radius: var(--smallrnd);
     border-style: none;
     padding: 6px, 8px;
+    box-shadow: 0 0 5px var(--addbluec);
 }
 
-div.pull-right button.btn-danger,
-div.pull-right button.btn-danger:is(:hover, :focus, :active) {
+div.pull-right button.btn-xs.btn-danger.delete,
+div.pull-right button.btn-xs.btn-danger.delete:is(:hover, :focus, :active) {
     background-color: var(--addredc);
     min-width: 60px;
     border-top-right-radius: var(--smallrnd);
     border-bottom-right-radius: var(--smallrnd);
     border-style: none;
     padding: 6px, 8px;
+    box-shadow: 0 0 5px var(--addredc);
 }
 
 div.well button.btn-success {
