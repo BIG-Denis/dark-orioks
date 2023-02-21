@@ -4,17 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/popup.css" rel="stylesheet" type="text/css" />
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/popup.js"></script>
-    <script src="desc_changer.js"></script>
+    <style type="text/css">
+        @font-face {
+            font-family: 'Source Sans Pro';
+            src: url('assets/fonts/SourceSansPro-SemiBold.woff');
+        }
+
+        * {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <div class="container" style="width: 400px;">
         <center>
             <div class="settings">
-                <h2 class="header">Тема</h2>
+                <h2 class="header" style="font-size: 25px;">Тема</h2>
                 <select class="form-select" id="theme">
                     <option selected value="0">Classic</option>
                     <option value="1">Dark Teal</option>
@@ -22,7 +31,7 @@
                     <option value="3">Neon Bar</option>
                 </select>
             </div>
-            <h2>
+            <h2 class="header">
                 Описание темы:
             </h2>
             <p id="description">
@@ -40,6 +49,11 @@
                 <li class="logo-item">
                     <button class="logobtn gitbtn" id="btngit">
                         <img class="logo" src="/assets/images/logos/github_logo_transparent.png" alt="Кнопка GITHUB">
+                    </button>
+                </li>
+                <li class="logo-item">
+                    <button class="logobtn gitbtn" id="btngitlab">
+                        <img class="logo" src="/assets/images/logos/gitlab_logo.png" alt="Кнопка GITLAB">
                     </button>
                 </li>
             </ul>

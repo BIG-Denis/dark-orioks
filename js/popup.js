@@ -1,10 +1,16 @@
+let theme_names = [
+    "classic",
+    "dark_teal",
+    "african_morning",
+    "neon_bar"
+];
 
-let theme_descs = {
-    0: "Классический, чересчур яркий, скучный и всем надоевший ОРИОКС с плохо читаемым текстом и некрасивым шрифтом.",
-    1: "Классика тёмных тем: стильный, чёткий, стройный, с изящными скруглёнными углами. Выбор серьёзного мужчины.",
-    2: "Тёмный синеватый фон, напоминающий южное море, и приятный, как восход утреннего солнца, розовый - теперь смотреть на Африканское побержье и баллы в ОРИОКС'е можно одновременно.",
-    3: "Бар - место, которым оканчивается каждая учебная неделя. Теперь он не только неоновый, но и всегда с вами, как в вашем сердце, только в ОРИОКС'е."
-};
+let theme_descs = [
+    "Классический, чересчур яркий, скучный и всем надоевший ОРИОКС с плохо читаемым текстом и некрасивым шрифтом.",
+    "Классика тёмных тем: стильный, чёткий, стройный, с изящными скруглёнными углами. Выбор серьёзного мужчины.",
+    "Тёмный синеватый фон, напоминающий южное море, и приятный, как восход утреннего солнца, розовый - теперь смотреть на Африканское побержье и баллы в ОРИОКС'е можно одновременно.",
+    "Бар - место, которым оканчивается каждая учебная неделя. Теперь он не только неоновый, но и всегда с вами, как в вашем сердце, только в ОРИОКС'е."
+];
 
 
 $(function() {
@@ -17,11 +23,6 @@ $(function() {
         let theme = select.val();
         chrome.storage.sync.set({"theme": theme}, function() {});
         if (theme > 0) {
-            let theme_names = {
-                1: "dark_teal",
-                2: "african_morning",
-                3: "neon_bar"
-            };
             chrome.scripting.updateContentScripts([{
                 id: "content-scripts",
                 js: ["js/main.js", "js/" + theme_names[theme] + ".js"],
@@ -30,8 +31,8 @@ $(function() {
         } else {
             chrome.scripting.updateContentScripts([{
                 id: "content-scripts",
-                js: ["js/main.js"],
-                css: ["assets/css/main.css"]
+                js: ["js/classic.js"],
+                css: ["assets/css/classic.css"]
             }]);
         }
         $("#description").html(theme_descs[theme]);
@@ -54,16 +55,8 @@ $(function() {
 
 
 $(function() {
-    function openVK() {
-        window.open('https://vk.com/unsigned_int','_blank');
-    }
-    
-    function openGithub() {
-        window.open('https://github.com/BIG-Denis/dark-orioks','_blank');
-    }
-
     buttons = document.getElementsByClassName("logobtn");
-
-    buttons[0].onclick = openVK;
-    buttons[1].onclick = openGithub;
+    buttons[0].onclick = () => window.open('https://vk.com/unsigned_int','_blank');
+    buttons[1].onclick = () => window.open('https://github.com/BIG-Denis/dark-orioks','_blank');
+    buttons[2].onclick = () => window.open('https://gitlab.com/ChinchillaY/dark-orioks','_blank');
 });

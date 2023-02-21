@@ -27,14 +27,16 @@
     --alertc: #3c2b2b;
 }
 
-
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('chrome-extension://__MSG_@@extension_id__/assets/fonts/SourceSansPro-SemiBold.woff');
+}
 
 /* TEXT OPTIONS */
 * {
     font-family: 'Source Sans Pro', sans-serif;
     color: var(--textcolor);
 }
-
 
 input[type="email"],
 input[type="text"],
@@ -863,4 +865,31 @@ div.panel-heading.click {
     color: var(--textcolor);
     border-top-left-radius: var(--medrnd);
     border-top-right-radius: var(--medrnd);
+}
+
+
+
+/* DEBT LABEL */
+tr.danger.ng-scope td {
+    background: var(--darkredc) !important;
+}
+
+/* PROJECT WORKING */
+div.modal-dialog div.modal-content div.modal-header.bg-success {
+    border-top-left-radius: var(--bigrnd) !important;
+    border-top-right-radius: var(--bigrnd) !important;
+    background: var(--darkgreenc) !important;
+}
+
+/* NEWS PAGE */
+tr.warning td {
+    background: var(--darkredc) !important;
+}
+
+/* SEND BUTTON */
+button.btn-success[type="submit"],
+button.btn-success[type="submit"]:is(:hover, :focus, :active) {
+    background: var(--dlc) !important;
+    border-radius: var(--medrnd) !important;
+    border-style: none;
 }

@@ -7,13 +7,8 @@
     "host_permissions": ["https://orioks.miet.ru/*"],
     "web_accessible_resources": [
         {
-            "resources": [
-                "fonts/*.ttf"
-            ],
-            "matches":
-            [
-                "<all_urls>"
-            ]
+            "resources": ["assets/fonts/*"],
+            "matches": ["<all_urls>"]
         }
     ],
     "icons": {

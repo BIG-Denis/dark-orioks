@@ -12,15 +12,40 @@
 
 * {
     color: white;
-    font-size: 16px;
 }
 
-select {
+p {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    font-size: 16px !important;
+    max-width: 90% !important;
+}
+
+p#description {
+    margin-bottom: 20px !important;
+}
+
+.header {
+    font-size: 22px;
+}
+
+select#theme,
+select#theme:is(:hover, :focus, :active, :visited, :focus-within, :focus-visible, :checked, ::after) {
     background: var(--blc) !important;
     color: white !important;
-    font-size: 16px !important;
-    border-radius: 10px !important;
+    border-radius: 8px !important;
     width: 75% !important;
+    height: 40px !important;
+    font-size: 18px !important;
+    border-style: solid !important;
+    border-color: white !important;
+    border-width: 1px !important;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 28px !important;
 }
 
 div.settings {
@@ -30,22 +55,13 @@ div.settings {
 
 body {
     background: var(--bdc);
+    margin: 0px !important;
 }
 
 div.container {
     min-height: 200px;
     min-width: 400px;
     border: 5px solid #646464;
-}
-
-h2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-p.warning-text {
-    padding-top: 15px;
-    max-width: 95%;
 }
 
 ul {
