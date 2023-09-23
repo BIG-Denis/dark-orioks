@@ -1,32 +1,30 @@
 {
-    "manifest_version": 3,
-    "name": "Dark ORIOKS",
-    "description": "Сделайте свой ОРИОКС красивее и приятнее, избавьтесь от выжигащего глаза своей яркостью белого цвета и острых, как арабская пища, углов с помощь этого расширения! Смена семестров без необходимости нажатия отдельной кнопки <сменить>, отдельная ссылка на страницу расписания прямо в ОРИОКСе и многое другое в подарок!",
-    "version": "1.0",
-    "permissions": ["activeTab", "tabs", "scripting", "storage"],
-    "host_permissions": ["https://orioks.miet.ru/*"],
-    "web_accessible_resources": [
-        {
-            "resources": ["assets/fonts/*"],
-            "matches": ["<all_urls>"]
-        }
-    ],
-    "icons": {
-        "16": "assets/images/icon/icon16x16.png",
-        "32": "assets/images/icon/icon32x32.png",
-        "48": "assets/images/icon/icon48x48.png",
-        "128": "assets/images/icon/icon128x128.png"
-    },
-    "background": {
-        "service_worker": "background.js"
-    },
-    "action": {
-        "default_popup": "popup.html",
-        "default_icon": {
-            "16": "assets/images/icon/icon16x16.png",
-            "32": "assets/images/icon/icon32x32.png",
-            "48": "assets/images/icon/icon48x48.png",
-            "128": "assets/images/icon/icon128x128.png"            
-        }
-    }
+   "action": {
+      "default_icon": {
+         "128": "assets/images/icon/icon128x128.png",
+         "16": "assets/images/icon/icon16x16.png",
+         "32": "assets/images/icon/icon32x32.png",
+         "48": "assets/images/icon/icon48x48.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "description": "Привнесите в свой ОРИОКС набор из нескольких тёмных тем. Выбирай свою любимую. Пользуйся и люби МИЭТ!",
+   "host_permissions": [ "https://orioks.miet.ru/*" ],
+   "icons": {
+      "128": "assets/images/icon/icon128x128.png",
+      "16": "assets/images/icon/icon16x16.png",
+      "32": "assets/images/icon/icon32x32.png",
+      "48": "assets/images/icon/icon48x48.png"
+   },
+   "manifest_version": 3,
+   "name": "Dark ORIOKS",
+   "permissions": [ "activeTab", "tabs", "scripting", "storage" ],
+   "version": "1.4",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "assets/fonts/*" ]
+   } ]
 }

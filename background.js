@@ -2,13 +2,15 @@ let theme_names = [
     "classic",
     "dark_teal",
     "african_morning",
-    "neon_bar"
+    "neon_bar",
+    "claybricks_area",
+    "twilight_wizard"
 ];
 
 chrome.runtime.onInstalled.addListener(function() {
     chrome.storage.sync.get("theme", function (opt) {
         let theme = opt.theme;
-
+        
         if (theme > 0) {
             chrome.scripting.registerContentScripts([{
                 id: "content-scripts",

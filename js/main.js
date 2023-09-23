@@ -14,6 +14,58 @@ if (select !== null) {
     select.onchange = change_semester;
 }
 
+// Download fix
+function download_fix_resources() {
+    let links = document.querySelectorAll("div.list-group div.panel-collapse div a");
+    for (let i = 0; i < links.length; i++) {
+        let split_href = links[i].href.split(":");
+        if (split_href[0] == "http") {
+            links[i].href = "https:" + split_href.slice(1);
+        }
+    }
+}
+
+function download_fix_news() {
+    let links = document.querySelectorAll("div.margin-top a");
+    for (let i = 0; i < links.length; i++) {
+        let split_href = links[i].href.split(":");
+        if (split_href[0] == "http") {
+            links[i].href = "https:" + split_href.slice(1);
+        }
+    }
+}
+
+if (document.location.href.includes("/student/ir/")) {
+    document.body.onload = download_fix_resources;
+} else if (document.location.href.includes("/student/news/")) {
+    document.body.onload = download_fix_news;
+}
+
+
+// remove word styles
+if (window.location.href.includes("news")){
+    let spans = document.querySelectorAll("div.margin-top span");
+    for (let i = 0; i < spans.length; i++) {
+        spans[i].removeAttribute("style");
+    }
+
+    let divs = document.querySelectorAll("div.margin-top div");
+    for (let i = 0; i < divs.length; i++) {
+        divs[i].removeAttribute("style");
+    }
+
+    let ps = document.querySelectorAll("div.margin-top p");
+    for (let i = 0; i < ps.length; i++) {
+        ps[i].removeAttribute("style");
+    }
+
+    let as = document.querySelectorAll("div.margin-top a");
+    for (let i = 0; i < as.length; i++) {
+        as[i].style = "initial";
+    }
+}
+
+
 let down_list = getElementByXpath("/html/body/nav/div/div[2]/ul[2]");
 
 let li = document.createElement("li");

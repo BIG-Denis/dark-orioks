@@ -10,15 +10,15 @@ table.table-condensed tbody tr td {
 }
 
 :root {
-    --ddc: #663b49;
-    --dlc: #835162;
-    --bdc: #192123;
-    --blc: #21292b;
-    --bmlc: #293133;
-    --hovergrayc: #312730;
+    --ddc: #5c5173;
+    --dlc: #52466C;
+    --bdc: #231B2A;
+    --blc: #281e30;
+    --bmlc: #31253c;
+    --hovergrayc: #392937;
     --hrefc: #81B8EF;
     --hrefconh: #629dd8;
-    --textcolor: #ffffff;
+    --textcolor: #dcdcdc;
     --borderc: var(--textcolor);
     --smallrnd: 3px;
     --medrnd: 5px;
@@ -27,8 +27,8 @@ table.table-condensed tbody tr td {
     --infrnd: 999px;
     --darkgreenc: #2b3a2e;
     --darkredc: #812A00;
-    --addbluec: #007C45;
-    --addredc: #A13D63;
+    --addbluec: #1c725e;
+    --addredc: #a02a79;
     --grade1c: #7a0c19;
     --grade2c: #df0707;
     --grade3c: #f48c06;

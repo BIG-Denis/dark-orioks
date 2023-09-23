@@ -1,4 +1,3 @@
-
 :root {
     --ddc: #00564D;
     --dlc: #00897B;
@@ -7,77 +6,75 @@
     --bmlc: #3b3b3b;
     --hrefc: #68B7DE;
     --hrefconh: #ABD7ED;
-    --red_btn: #f04124;
+    --red_btn: #f04124
 }
 
 * {
-    color: white;
+    color: #fff
 }
 
 p {
     margin-left: 10px !important;
     margin-right: 10px !important;
     font-size: 16px !important;
-    max-width: 90% !important;
+    max-width: 90% !important
 }
 
 p#description {
-    margin-bottom: 20px !important;
+    margin-bottom: 20px !important
 }
 
 .header {
-    font-size: 22px;
+    font-size: 22px
 }
 
 select#theme,
 select#theme:is(:hover, :focus, :active, :visited, :focus-within, :focus-visible, :checked, ::after) {
     background: var(--blc) !important;
-    color: white !important;
+    color: #fff !important;
     border-radius: 8px !important;
     width: 75% !important;
     height: 40px !important;
     font-size: 18px !important;
-    border-style: solid !important;
-    border-color: white !important;
-    border-width: 1px !important;
+    border: 1px solid #fff !important
 }
 
 h2 {
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 28px !important;
+    font-size: 28px !important
 }
 
 div.settings {
     min-width: 250px;
-    margin-top: 10px;
+    margin-top: 10px
 }
 
 body {
     background: var(--bdc);
-    margin: 0px !important;
+    margin: 0 !important
 }
 
 div.container {
     min-height: 200px;
     min-width: 400px;
-    border: 5px solid #646464;
+    border: 5px solid #646464
 }
 
 ul {
     list-style-type: none;
-    padding-left: 0;
+    padding-left: 0
 }
 
 ul li {
     display: inline-block;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 10px
 }
 
 img.logo {
     max-width: 32px;
-    max-height: 32px;
+    max-height: 32px
 }
 
 button.logobtn {
@@ -85,18 +82,18 @@ button.logobtn {
     height: 48px;
     border-style: none !important;
     background: var(--blc);
-    border-radius: 15px;
+    border-radius: 15px
 }
 
 button.logobtn:is(:hover, :focus, :active) {
-    background: var(--bmlc);
+    background: var(--bmlc)
 }
 
 img {
-    pointer-events: none;
+    pointer-events: none
 }
 
 iframe.donatebtn {
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
 }

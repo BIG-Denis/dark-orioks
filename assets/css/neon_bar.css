@@ -1,3 +1,13 @@
+select,
+textarea {
+    border-radius: var(--smallrnd) !important
+}
+
+*,
+div.panel-body h4,
+table.table-condensed tbody tr td {
+    font-family: 'Source Sans Pro', sans-serif
+}
 
 :root {
     --ddc: #8D0243;
@@ -16,8 +26,8 @@
     --largernd: 25px;
     --infrnd: 999px;
     --darkgreenc: #202921;
-    --darkredc: #332222;
-    --addbluec: #45886a;
+    --darkredc: #521818;
+    --addbluec: #2b6048;
     --addredc: #913c4b;
     --grade1c: #7a0c19;
     --grade2c: #df0707;
@@ -25,507 +35,358 @@
     --grade4c: #80ac5f;
     --grade5c: #4f702b;
     --alertc: #3c2b2b;
+    --alertd: #9e6124;
 }
 
 @font-face {
     font-family: 'Source Sans Pro';
-    src: url('chrome-extension://__MSG_@@extension_id__/assets/fonts/SourceSansPro-SemiBold.woff');
+    src: url('chrome-extension://__MSG_@@extension_id__/assets/fonts/SourceSansPro-SemiBold.woff2')
 }
 
-/* TEXT OPTIONS */
 * {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: var(--textcolor);
+    color: var(--textcolor)
 }
 
-input[type="email"],
-input[type="text"],
-input[type="email"]:is(::placeholder, :placeholder-shown, :hover, :focus, :active, ::backdrop, ::first-line, :valid, :disabled, :invalid),
-input[type="text"]:is(::placeholder, :placeholder-shown, :hover, :focus, :active, ::backdrop, ::first-line, :valid, :disabled, :invalid) {
+nav.navbar-inverse.navbar div.container div.collapse.navbar-collapse ul.navbar-nav.nav li a:is(:hover, :focus, :active) {
+    color: var(--textcolor) !important;
+}
+
+input[type=email],
+input[type=email]:is(::placeholder, :placeholder-shown, :hover, :focus, :active, ::backdrop, ::first-line, :valid, :disabled, :invalid),
+input[type=text],
+input[type=text]:is(::placeholder, :placeholder-shown, :hover, :focus, :active, ::backdrop, ::first-line, :valid, :disabled, :invalid) {
     background-color: var(--bmlc) !important;
     color: var(--textcolor);
-    border-radius: var(--medrnd);
+    border-radius: var(--medrnd)
 }
 
 select {
     background: var(--bmlc) !important;
-    color: var(--textcolor) !important;
-    border-radius: var(--smallrnd) !important;
+    color: var(--textcolor) !important
 }
 
-/* a,
-* > a,
-* > * > a,
-* > * > * > a,
-* > * > * > * > a,
-* > * > * > * > * > a,
-* > * > * > * > * > * > a,
-* > * > * > * > * > * > * > a,
-* > * > * > * > * > * > * > * > a,
-* > * > * > * > * > * > * > * > * > a {
-    color: var(--hrefc) !important;
-    text-shadow: 0 0 2px var(--hrefc);
-} */
-
-/* HYPERLINKS COLOR */
-* > a {
-    color: var(--hrefc) !important;
-    text-shadow: 0 0 2px var(--hrefc);
+*>a,
+div.well.ng-binding p a {
+    color: var(--hrefc) !important
 }
 
-* > a:is(:hover, :focus, :active) {
-    color: var(--hrefconh) !important;
+*>a {
+    text-shadow: 0 0 2px var(--hrefc)
+}
+
+*>a:is(:hover, :focus, :active) {
+    color: var(--hrefconh) !important
+}
+
+#bp,
+#to_top>*,
+.text-info,
+.text-success,
+a.avatar,
+a.btn,
+div.author,
+div.container.margin-top div.well>*,
+div.container.margin-top div.well>*>*,
+div.container.margin-top div.well>*>*>*,
+div.container.margin-top div.well>*>*>*>*,
+div.dropdown-menu-left div,
+div.dropdown-menu-left>*,
+nav a,
+nav a:hover,
+textarea {
+    color: var(--textcolor) !important
 }
 
 a.btn {
-    color: var(--textcolor) !important;
-    border-radius: var(--medrnd);
+    border-radius: var(--medrnd)
 }
 
-a.btn.pull-right-md.pull-right-lg {
-    background-color: var(--blc) !important;
-}
-
-*.text-success, *.text-info {
-    color: var(--textcolor) !important;
+a.btn.pull-right-md.pull-right-lg,
+span.bootstrap-switch-label {
+    background-color: var(--blc) !important
 }
 
 textarea {
-    color: var(--textcolor) !important;
-    background: var(--blc) !important;
-    border-radius: var(--smallrnd) !important;
-}
-
-div.author {
-    color: var(--textcolor) !important;
+    background: var(--blc) !important
 }
 
 a.avatar {
     background: var(--bmlc) !important;
-    color: var(--textcolor) !important;
-    border-color: var(--textcolor) !important;
+    border-color: var(--textcolor) !important
 }
 
-
-
-/* BODY SETTING */
-html, body {
+body,
+html {
     height: 100%;
-    background: linear-gradient(to top, var(--bdc), 75%,  #3C011D), var(--bdc) !important;
-    background-repeat: repeat-x, no-repeat !important;
+    background: linear-gradient(to top, var(--bdc), 75%, #3c011d), var(--bdc) !important;
+    background-repeat: repeat-x, no-repeat !important
 }
 
 div.alert.alert-success {
     font-size: 16px !important;
     background: var(--darkgreenc) !important;
-    border-style: none !important;
+    border-style: none !important
 }
 
 span.label.label-danger {
-    background: var(--addredc) !important;
+    background: var(--addredc) !important
 }
 
-
-
-/* WIDER GRADES */
 td span.grade {
-    width: 45px !important;
+    width: 45px !important
 }
 
-
-
-/* CHANGE POINTS VIEW MODE */
 #bp {
     background: var(--bmlc) !important;
-    color: var(--textcolor) !important;
     font-size: 12px !important;
     text-align: center !important;
-    width: 50px !important;
+    width: 50px !important
 }
 
-
-
-/* NAVBAR */
 nav:not(.dropdown_toggle) {
-    background: var(--dlc);
+    background: var(--dlc)
 }
 
-*:not(span.caret) {
-    border-color: var(--borderc) !important;
+div#auth form#login-form,
+div.dropdown-menu-left div,
+div.list-group div.list-group-item,
+div.panel.panel-info>div,
+table.ui-datepicker-calendar,
+tr.ng-scope,
+ul.breadcrumb {
+    background: var(--blc)
 }
 
+:not(span.caret) {
+    border-color: var(--borderc) !important
+}
 
-
-/* NAVBAR DROPDOWN */
+nav ul a:focus,
+nav ul a:hover,
+nav ul li.active a,
 nav ul li.dropdown.open a.dropdown-toggle {
-    background-color: var(--ddc) !important;
+    background-color: var(--ddc) !important
 }
 
-nav ul.dropdown-menu a {
-    background-color: var(--dlc) !important;
-}
-
+nav ul.dropdown-menu a,
 nav ul.dropdown-menu li.divider {
-    background-color: var(--dlc) !important;
-}
-
-
-/* HYPERLINKS NAVBAR */
-nav ul a:hover {
-    background-color: var(--ddc) !important;
-}
-
-nav ul li.active a { /* after click */
-    background-color: var(--ddc) !important;
-}
-
-nav ul a:focus { /* beteen click and page load */
-    background-color: var(--ddc) !important;
-}
-
-nav a {
-    color: var(--textcolor) !important;
-}
-
-nav a:hover {
-    color: var(--textcolor) !important;
+    background-color: var(--dlc) !important
 }
 
 a#linkschedule:is(:hover, :focus, :active) {
-    color: var(--textcolor) !important;
-}
-
-
-
-/* NOTIFICATIONS MENU */
-div.dropdown-menu-left div{
-    background: var(--blc);
-    color: var(--textcolor) !important;
+    color: var(--textcolor) !important
 }
 
 div.notification:is(:hover, :focus, :active),
-div.notification:is(:hover, :focus, :active) > *,
-div.notification:is(:hover, :focus, :active) > * > *
-{
-    background: var(--bmlc) !important;
+div.notification:is(:hover, :focus, :active)>*,
+div.notification:is(:hover, :focus, :active)>*>* {
+    background: var(--bmlc) !important
 }
 
 div.notification-icon.fa.fa-info.bg-info:is(:hover, :focus, :active) {
-    background: var(--hovergrayc) !important;
-}
-
-div.dropdown-menu-left > * {
-    color: var(--textcolor) !important;
+    background: var(--hovergrayc) !important
 }
 
 div.notification-more.notification-more-all:is(:hover, :focus, :active) {
-    background: var(--bmlc);
+    background: var(--bmlc)
 }
 
-
-
-/* BREADCRUMB */
 ul.breadcrumb {
-    background: var(--blc);
-    border-radius: var(--infrnd);
-    /* border-color: var(--borderc); */
+    border-radius: var(--infrnd)
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width:768px) {
     ul.breadcrumb {
         font-size: 12px;
         padding-left: 30px;
-        padding-right: 30px;
+        padding-right: 30px
     }
 }
 
-li a {
-    color: var(--hrefc);
+#tbodyUserFiles a,
+a.pointer,
+div.list-group a,
+div.resumable-drop a u,
+li a,
+table.table.table-condensed tbody tr td.collapser a.newColor,
+table.table.table-condensed tbody tr.collapse td a,
+td a.glyphicon-eye-open {
+    color: var(--hrefc)
+}
+
+span.label-info,
+span.label-warning,
+ul.breadcrumb li.active {
+    color: var(--textcolor)
 }
 
 li a:is(:hover, :focus, :active) {
-    color: var(--hrefconh);
-}
-
-ul.breadcrumb li.active {
-    color: var(--textcolor);
+    color: var(--hrefconh)
 }
 
 ul.breadcrumb a:focus {
-    color: var(--hrefconh);
+    color: var(--hrefconh)
 }
 
-
-
-/* WELLS */
+div.col-md-4 div.panel-default,
+div.modal-dialog div.modal-content,
 div.well {
     background: var(--blc);
-    border-radius: var(--bigrnd);
+    border-radius: var(--bigrnd)
 }
 
-
-
-/* STUPID <a> SEMESTR CHANGER */
 div.well.ng-binding p a {
     display: block;
-    font-size: 16px;
-    color: var(--hrefc) !important;
-}
-
-
-
-/* RIGHT COLUMN, NEXT LESSONS AND SUBJECT NEWS*/
-tr.ng-scope {
-    background: var(--blc);
+    font-size: 16px
 }
 
 span.label {
     border-radius: var(--infrnd) !important;
     font-size: 10px;
-    margin: 2px;
+    margin: 2px
 }
 
 span.label-warning {
     background: var(--addredc);
-    color: var(--textcolor);
-    box-shadow: 0 0 5px var(--addredc);
+    box-shadow: 0 0 5px var(--addredc)
 }
 
 span.label-info {
     background: var(--addbluec);
-    color: var(--textcolor);
-    box-shadow: 0 0 5px var(--addbluec);
-}
-
-div.col-md-4 div.panel-default {
-    background: var(--blc);
-    border-radius: var(--bigrnd);
+    box-shadow: 0 0 5px var(--addbluec)
 }
 
 div.panel-body h4 {
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
+    margin-left: 5px
 }
 
 table.table-condensed tbody tr td {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 13px !important;
-}
-
-div.list-group div.list-group-item {
-    background: var(--blc);
+    font-size: 13px !important
 }
 
 div.list-group div.list-group-item:first-child {
     border-top-right-radius: var(--bigrnd);
-    border-top-left-radius: var(--bigrnd);
+    border-top-left-radius: var(--bigrnd)
 }
 
 div.list-group div.list-group-item:last-child {
     border-bottom-right-radius: var(--bigrnd);
-    border-bottom-left-radius: var(--bigrnd);
+    border-bottom-left-radius: var(--bigrnd)
 }
 
 div.list-group div.list-group-item:only-child {
-    border-radius: 0px;
-}
-
-div.list-group a {
-    color: var(--hrefc);
-}
-
-div.panel-body h4 {
-    margin-left: 5px;
+    border-radius: 0
 }
 
 div.panel.panel-default.ng-scope div.panel-body table.table.table-borderless.table-condensed tbody tr:is(:hover, :focus, :active) {
-    background: var(--blc) !important;
+    background: var(--blc) !important
 }
 
-
-
-/* LEFT COLUMN, CLASS POINTS (FIX)*/
+tr.discussion-label-span,
 tr.pointer {
-    background: transparent;
+    background: 0 0
 }
 
+tr.discussion-label-span.success>td,
 tr.success.ng-scope,
 tr.success.ng-scope td {
-    background: var(--darkgreenc) !important;
-}
-
-
-
-/* MIDDLE COLUMN */
-tr.discussion-label-span {
-    background: transparent;
-}
-
-tr.discussion-label-span.success > td {
-    background: var(--darkgreenc) !important;
+    background: var(--darkgreenc) !important
 }
 
 td.text-right span {
-    width: 120px !important;
+    width: 120px !important
 }
 
-a.pointer {
-    color: var(--hrefc);
-}
-
-tr.danger.ng-scope td > * {
+tr.danger.ng-scope td>* {
     background: var(--darkredc) !important;
-    color: var(--textcolor) !important;
+    color: var(--textcolor) !important
 }
 
 table.table.table-hover tbody tr.ng-scope:is([ng-if="!nowDis.sheet_closed"]) {
-    background: transparent;
-}
-
-
-/* MODAL CONTENT */
-div.modal-dialog div.modal-content {
-    background: var(--blc);
-    border-radius: var(--bigrnd);
+    background: 0 0
 }
 
 div.modal-footer button {
     background: var(--dlc);
     color: var(--textcolor);
     border-radius: var(--medrnd);
-    border-style: none;
+    border-style: none
 }
 
 div.modal-footer button:is(:hover, :focus, :active) {
-    background: var(--ddc) !important;
+    background: var(--ddc) !important
 }
 
 div.modal-footer a.pull-left {
     background: var(--bmlc);
     color: var(--textcolor);
-    border-radius: var(--medrnd);
+    border-radius: var(--medrnd)
 }
 
-div.row div.badge {
-    background: var(--bmlc) !important;
-    color: var(--textcolor);
-    font-size: 12px;
-}
-
+div.row div.badge,
 span.pull-right {
     background: var(--bmlc) !important;
     color: var(--textcolor);
-    font-size: 12px;
+    font-size: 12px
 }
 
-
-
-/* HOVER OVER MULTIPLE TABLES */
+table.table.table-hover tr.info td,
+table.table.table-hover tr:focus td,
 table.table.table-hover tr:hover td {
-    background-color: var(--hovergrayc) !important;
+    background-color: var(--hovergrayc) !important
 }
 
-table.table.table-hover tr:focus td {
-    background-color: var(--hovergrayc) !important;
-}
-
-table.table.table-hover tr.info td {
-    background-color: var(--hovergrayc) !important;
-}
-
-
-
-/* TABLE ACTIVE */
 tr.active td {
-    background: var(--bdc) !important;
+    background: var(--bdc) !important
 }
 
-
-
-/* SELECT */
 select.input-sm {
     background: var(--blc);
     color: var(--textcolor);
-    border-radius: var(--smallrnd) !important;
+    border-radius: var(--smallrnd) !important
 }
 
-
-
-/* GRADES */
 span.grade {
-    border-radius: 4px;
+    border-radius: 4px
 }
 
 span.grade_1 {
     background: var(--grade1c) !important;
-    box-shadow: 0 0 5px var(--grade1c);
+    box-shadow: 0 0 5px var(--grade1c)
 }
 
 span.grade_2 {
     background: var(--grade2c) !important;
-    box-shadow: 0 0 5px var(--grade2c);
+    box-shadow: 0 0 5px var(--grade2c)
 }
 
 span.grade_3 {
     background: var(--grade3c) !important;
-    box-shadow: 0 0 5px var(--grade3c);
+    box-shadow: 0 0 5px var(--grade3c)
 }
 
 span.grade_4 {
     background: var(--grade4c) !important;
-    box-shadow: 0 0 5px var(--grade4c);
+    box-shadow: 0 0 5px var(--grade4c)
 }
 
 span.grade_5 {
     background: var(--grade5c) !important;
-    box-shadow: 0 0 5px var(--grade5c);
+    box-shadow: 0 0 5px var(--grade5c)
 }
 
 td:has(> span.grade) {
     text-align: center;
-    font-size: 16px;
+    font-size: 16px
 }
 
 td.mvb {
-    font-size: 14px;
+    font-size: 14px
 }
 
-
-
-/* STUPID UP ARROW (HATE IT) FROM LEFT SIDE OF SCREEN */
 #to_top {
-    opacity: 0.1;
-}
-
-#to_top > * {
-    color: var(--textcolor) !important;
-}
-
-
-
-/* NEWS PAGE */
-td a.glyphicon-eye-open {
-    color: var(--hrefc);
-}
-
-div.container.margin-top div.well > * {
-    color: var(--textcolor) !important;
-}
-div.container.margin-top div.well > * > * {
-    color: var(--textcolor) !important;
-}
-div.container.margin-top div.well > * > * > * {
-    color: var(--textcolor) !important;
-}
-div.container.margin-top div.well > * > * > * > * {
-    color: var(--textcolor) !important;
-}
-
-
-
-/* USER FILES PAGE */
-#tbodyUserFiles a {
-    color: var(--hrefc);
+    opacity: .1
 }
 
 div.pull-right button.btn-xs.btn-info.link,
@@ -536,7 +397,7 @@ div.pull-right button.btn-xs.btn-info.link:is(:hover, :focus, :active) {
     border-bottom-left-radius: var(--smallrnd);
     border-style: none;
     padding: 6px, 8px;
-    box-shadow: 0 0 5px var(--addbluec);
+    box-shadow: 0 0 5px var(--addbluec)
 }
 
 div.pull-right button.btn-xs.btn-danger.delete,
@@ -547,375 +408,437 @@ div.pull-right button.btn-xs.btn-danger.delete:is(:hover, :focus, :active) {
     border-bottom-right-radius: var(--smallrnd);
     border-style: none;
     padding: 6px, 8px;
-    box-shadow: 0 0 5px var(--addredc);
+    box-shadow: 0 0 5px var(--addredc)
 }
 
 div.well button.btn-success {
     background: var(--dlc);
     border-radius: var(--medrnd);
-    border: none;
+    border: none
+}
+
+div.list-group div.list-group-item.bg-grey.pointer,
+div.resumable-drop,
+div.search-form {
+    border-radius: var(--bigrnd)
 }
 
 div.well button.btn-success:is(:hover, :focus, :active) {
     background: var(--ddc) !important;
-    border-radius: var(--medrnd);
+    border-radius: var(--medrnd)
 }
 
 div.resumable-drop {
     background: var(--blc);
-    border-radius: var(--bigrnd);
-    color: var(--textcolor);
+    color: var(--textcolor)
 }
 
-div.resumable-drop a u {
-    color: var(--hrefc);
-}
-
-ul.nav-tabs li.active a, ul.nav-tabs li.active a:is(:hover, :focus, :active) {
+ul.nav-tabs li.active a,
+ul.nav-tabs li.active a:is(:hover, :focus, :active) {
     background: var(--bmlc) !important;
-    color: var(--textcolor);
+    color: var(--textcolor)
 }
 
 ul.nav-tabs li a:is(:hover, :focus, :active) {
     background: var(--bmlc) !important;
-    color: var(--textcolor);
+    color: var(--textcolor)
 }
 
 button.btn.btn-default,
 button.btn.btn-default:is(:hover, :focus, :active) {
     color: var(--textcolor);
-    border-radius: var(--medrnd);
+    border-radius: var(--medrnd)
 }
 
 button.btn-xs.btn-primary.file-picker-select {
     color: var(--textcolor);
     background: var(--addbluec);
     border-radius: var(--smallrnd);
-    border-style: none;
+    border-style: none
 }
 
-
-
-/* LOGIN PAGE */
 div#auth {
-    border-radius: var(--largernd);
+    border-radius: var(--largernd)
+}
+
+button#loginbut,
+div.baseRow div.alert.alert-danger {
+    border-radius: var(--medrnd);
+    color: var(--textcolor)
 }
 
 div#auth div#authheader {
     background: var(--dlc);
     border-top-left-radius: var(--largernd);
-    border-top-right-radius: var(--largernd);
+    border-top-right-radius: var(--largernd)
 }
 
 div#auth div#authfooter {
     background: var(--dlc);
     border-bottom-left-radius: var(--largernd);
-    border-bottom-right-radius: var(--largernd);
+    border-bottom-right-radius: var(--largernd)
 }
 
-div#auth div#authheader h1{
+div#auth div#authheader h1 {
     color: var(--textcolor) !important;
-    font-size: 32px;
+    font-size: 32px
 }
 
-div#auth div#authheader h2{
+div#auth div#authfooter h2,
+div#auth div#authheader h2 {
     color: var(--textcolor) !important;
-    font-size: 16px;
-}
-
-div#auth form#login-form {
-    background: var(--blc);
-}
-
-div#auth div#authfooter h2{
-    color: var(--textcolor) !important;
-    font-size: 16px;
+    font-size: 16px
 }
 
 input#loginform-rememberme {
     accent-color: var(--dlc);
-    background-color: var(--bmlc);
+    background-color: var(--bmlc)
 }
 
 button#loginbut {
-    border-radius: var(--medrnd);
-    background: var(--dlc);
-    color: var(--textcolor);
+    background: var(--dlc)
 }
 
 input.form-control:is(::placeholder, :placeholder-shown, :hover, :focus, :active, ::backdrop, ::first-line, :valid) {
     background-color: var(--bmlc) !important;
-    border-radius: var(--medrnd);
+    border-radius: var(--medrnd)
 }
 
 div.baseRow div.alert.alert-danger {
     background: var(--alertc) !important;
-    color: var(--textcolor);
     font-size: 14px;
-    border-radius: var(--medrnd);
+    background: var(--alertc) !important
 }
 
-div.baseRow div.alert.alert-danger{
-    background: var(--alertc) !important;
+div.panel-collapse>div:first-child {
+    border-top: none !important
 }
 
-
-
-/* RESOURCES PAGE */
-div.list-group div.list-group-item.bg-grey.pointer {
-    border-radius: var(--bigrnd);
-}
-
-div.panel-collapse > div:first-child {
-    border-top: none !important;
-}
-
-div.list-group div.panel-collapse > div:is(:hover, :focus, :active) {
-    background: var(--bmlc) !important;
+div.list-group div.panel-collapse>div:is(:hover, :focus, :active) {
+    background: var(--bmlc) !important
 }
 
 div.list-group div.panel-collapse div div span.label.label-default {
     background-color: var(--blc);
-    color: var(--textcolor);
+    color: var(--textcolor)
 }
 
 div.list-group div.panel-collapse div div span.label.label-success {
     background-color: var(--darkgreenc);
-    color: var(--textcolor);
+    color: var(--textcolor)
 }
 
-
-
-/* FAQ (IN NEWS) PAGE */
-div.search-form {
-    border-radius: var(--bigrnd);
-}
-
+button.btn-xs#collapseAll,
+input#faqcategory-key_words,
 select#faqcategory-category {
     background: var(--blc);
     color: var(--textcolor);
-    border-radius: var(--smallrnd);
-}
-
-input#faqcategory-key_words {
-    background: var(--blc);
-    color: var(--textcolor);
-    border-radius: var(--smallrnd);
+    border-radius: var(--smallrnd)
 }
 
 button.btn.btn-primary {
     background: var(--dlc);
     color: var(--textcolor);
     border: none;
-    border-radius: var(--medrnd);
+    border-radius: var(--medrnd)
 }
 
 button.btn.btn-primary:is(:hover, :focus, :active) {
     background: var(--ddc);
     color: var(--textcolor);
-    border-radius: var(--medrnd);
+    border-radius: var(--medrnd)
 }
 
-div.panel-group#accordion div.panel.panel-default{
+div.panel-group#accordion div.panel.panel-default {
     background: var(--blc) !important;
     color: var(--textcolor) !important;
-    border-radius: var(--bigrnd);
+    border-radius: var(--bigrnd)
 }
 
 div.panel-group#accordion div.panel.panel-default div.panel-heading {
     background: var(--blc);
     color: var(--textcolor);
-    border-radius: var(--bigrnd);
+    border-radius: var(--bigrnd)
 }
 
 div.panel-group#accordion div.panel.panel-default div.panel-collapse:is(:hover, :focus, :active) {
     background-color: var(--blc) !important;
-    border-radius: var(--bigrnd);
+    border-radius: var(--bigrnd)
 }
 
 table.table.table-condensed tbody tr:is(:hover, :focus, :active) {
-    background: var(--bmlc);
+    background: var(--bmlc)
 }
 
-table.table.table-condensed tbody tr td.collapser a.newColor {
-    color: var(--hrefc);
-}
-
-table.table.table-condensed tbody tr.collapse td a {
-    color: var(--hrefc);
-}
-
-
-
-/* HOMEWORK PAGE */
-a.btn.btn-success {
-    background: var(--dlc);
-    border-radius: var(--medrnd);
-    color: var(--textcolor);
-    border-style: none;
-}
-
-a.btn.btn-success:is(:hover, :focus, :active) {
-    background: var(--ddc) !important;
-}
-
-span.bootstrap-switch-label {
-    background-color: var(--blc) !important;
-}
-
-span.bootstrap-switch-handle-on.bootstrap-switch-primary {
-    background: var(--addbluec) !important;
-}
-
-span.bootstrap-switch-handle-off.bootstrap-switch-default {
-    background: var(--addredc) !important;
-    color: var(--textcolor) !important;
-}
-
-button.btn-xs#collapseAll {
-    background: var(--blc);
-    color: var(--textcolor);
-    border-radius: var(--smallrnd);
-}
-
+a.btn.btn-success,
 button.btn.btn-success {
     background: var(--dlc);
     border-radius: var(--medrnd);
     color: var(--textcolor);
-    border-style: none;
+    border-style: none
+}
+
+a.btn.btn-success:is(:hover, :focus, :active) {
+    background: var(--ddc) !important
+}
+
+span.bootstrap-switch-handle-on.bootstrap-switch-primary {
+    background: var(--addbluec) !important
+}
+
+span.bootstrap-switch-handle-off.bootstrap-switch-default {
+    background: var(--addredc) !important;
+    color: var(--textcolor) !important
 }
 
 button.btn.btn-success:is(:hover, :focus, :active) {
-    background: var(--ddc) !important;
+    background: var(--ddc) !important
 }
 
-
-
-/* PROJECT WORK PAGE */
 div#ui-datepicker-div {
     background-color: var(--blc);
     color: var(--textcolor);
-}
-
-table.ui-datepicker-calendar {
-    background: var(--blc);
+    background: var(--blc) !important
 }
 
 table.ui-datepicker-calendar tbody tr td a {
     background: var(--bmlc) !important;
-    color: var(--textcolor) !important;
+    color: var(--textcolor) !important
 }
 
 div.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
-    background: var(--bmlc);
+    background: var(--bmlc)
 }
 
 form#w0 a.btn.btn-secondary {
     background: var(--bmlc);
     color: var(--textcolor);
     border-radius: var(--medrnd);
-    border-style: none;
+    border-style: none
 }
 
-div#ui-datepicker-div {
-    background: var(--blc) !important;
-}
-
-
-
-/* PROFILE LABEL */
 div.panel.panel-info {
     border-radius: var(--infrnd);
-    border-color: var(--bdc) !important;
+    border-color: var(--bdc) !important
 }
 
 div.panel.panel-info div.panel-heading {
     border-top-left-radius: var(--bigrnd);
     border-top-right-radius: var(--bigrnd);
-    border-style: none !important;
+    border-style: none !important
 }
 
 div.panel.panel-info div.panel-footer {
     border-bottom-left-radius: var(--bigrnd);
     border-bottom-right-radius: var(--bigrnd);
-    border-style: none !important;
-}
-
-div.panel.panel-info > div {
-    background: var(--blc);
+    border-style: none !important
 }
 
 div.form-group a.btn.btn-primary {
     background: var(--dlc);
-    border-style: none;
+    border-style: none
 }
 
 img.img-responsive {
-    display: none;
+    display: none
 }
 
-
-
-/* + LABELS */
 div.alert.alert-danger {
     border-radius: var(--bigrnd);
     border-style: none;
-    font-size: 16px;
+    font-size: 16px
 }
 
-
-
-/* PRACTICE PAGE */
 table.table.table-bordered tbody tr td {
-    background: transparent !important;
+    background: 0 0 !important
 }
 
 table.table.table-bordered tbody tr th {
-    background: var(--bmlc) !important;
+    background: var(--bmlc) !important
 }
 
-
-
-/* THEME EXTRAS */
 div.panel.panel-default {
-    background: transparent;
-    border-radius: var(--medrnd);
+    background: 0 0;
+    border-radius: var(--medrnd)
 }
 
 div.panel-heading.click {
     background: var(--blc);
     color: var(--textcolor);
     border-top-left-radius: var(--medrnd);
-    border-top-right-radius: var(--medrnd);
+    border-top-right-radius: var(--medrnd)
 }
 
 tr.discipline_checkboxes.ng-scope {
-    background: transparent;
+    background: 0 0
 }
 
-
-
-/* DEBT LABEL */
-tr.danger.ng-scope td {
-    background: var(--darkredc) !important;
+tr.danger.ng-scope,
+tr.danger.ng-scope td,
+tr.danger.ng-scope td b,
+tr.danger.ng-scope:is(:hover, :focus, :active),
+tr.danger.ng-scope:is(:hover, :focus, :active) td,
+tr.danger.ng-scope:is(:hover, :focus, :active) td b,
+tr.danger.ng-scope td:is(:hover, :focus, :active),
+tr.danger.ng-scope td:is(:hover, :focus, :active) b,
+tr.danger.ng-scope td b:is(:hover, :focus, :active),
+tr.warning td {
+    background: var(--darkredc) !important
 }
 
-/* PROJECT WORKING */
 div.modal-dialog div.modal-content div.modal-header.bg-success {
     border-top-left-radius: var(--bigrnd) !important;
     border-top-right-radius: var(--bigrnd) !important;
-    background: var(--darkgreenc) !important;
+    background: var(--darkgreenc) !important
 }
 
-/* NEWS PAGE */
-tr.warning td {
-    background: var(--darkredc) !important;
-}
-
-/* SEND BUTTON */
-button.btn-success[type="submit"],
-button.btn-success[type="submit"]:is(:hover, :focus, :active) {
+button.btn-success[type=submit],
+button.btn-success[type=submit]:is(:hover, :focus, :active) {
     background: var(--dlc) !important;
     border-radius: var(--medrnd) !important;
-    border-style: none;
+    border-style: none
+}
+
+ul.list-group li,
+ul.list-group li span {
+    background: var(--blc);
+    color: var(--textcolor) !important;
+}
+
+ul.list-group li:first-child {
+    border-top-left-radius: var(--bigrnd);
+    border-top-right-radius: var(--bigrnd);
+}
+
+ul.list-group li:last-child {
+    border-bottom-left-radius: var(--bigrnd);
+    border-bottom-right-radius: var(--bigrnd);
+}
+
+ul.list-group li,
+ul.list-group li span {
+    background: var(--blc);
+    color: var(--textcolor) !important
+}
+
+ul.list-group li:first-child {
+    border-top-left-radius: var(--bigrnd);
+    border-top-right-radius: var(--bigrnd)
+}
+
+ul.list-group li:last-child {
+    border-bottom-left-radius: var(--bigrnd);
+    border-bottom-right-radius: var(--bigrnd)
+}
+
+table.table.table-condensed.table-striped tbody tr,
+table.table.table-condensed.table-striped tbody tr td {
+    background: transparent
+}
+
+table.table.table-condensed.table-striped tbody tr td div.pull-right button.btn-xs.btn-danger.removeProject {
+    border-radius: var(--smallrnd);
+    background: var(--addredc)
+}
+
+table.table.table-condensed.table-striped tbody tr td i.label.label-warning {
+    color: var(--textcolor);
+    background: var(--bmlc)
+}
+
+div.alert.alert-info {
+    font-size: 16px;
+    background: var(--darkgreenc);
+    border-color: var(--borderc);
+    border-radius: var(--medrnd)
+}
+
+button.btn-xs.btn-danger,
+button.btn-xs.btn-info,
+button.btn.btn-info {
+    border-radius: var(--smallrnd) !important
+}
+
+button.btn.btn-info {
+    color: var(--textcolor);
+    background: var(--addbluec)
+}
+
+select#dis_semester {
+    width: 300px
+}
+
+div.selectize-input {
+    background: var(--bmlc) !important;
+    color: var(--textcolor)
+}
+
+div.selectize-dropdown,
+div.selectize-dropdown div.selectize-dropdown-content div.option {
+    color: var(--textcolor) !important;
+    background: var(--bmlc) !important
+}
+
+div.create {
+    color: var(--textcolor) !important
+}
+
+div.create.active,
+div.create:is(:hover, :focus, :active) {
+    color: var(--textcolor) !important;
+    background: var(--hovergrayc)
+}
+
+tbody#tbodyUserFiles tr td div.pull-right button.btn-xs.btn-info.link {
+    border-radius: 0 !important;
+    border-top-left-radius: var(--smallrnd) !important;
+    border-bottom-left-radius: var(--smallrnd) !important
+}
+
+tbody#tbodyUserFiles tr td div.pull-right button.btn-xs.btn-danger.delete {
+    border-radius: 0 !important;
+    border-top-right-radius: var(--smallrnd) !important;
+    border-bottom-right-radius: var(--smallrnd) !important
+}
+
+nav.navbar-inverse.navbar div.container div ul.navbar-nav.nav li ul.dropdown-menu li a:is(:hover, :focus, :active),
+nav.navbar-inverse.navbar div.container div ul.navbar-nav.nav li ul.dropdown-menu li:is(:hover, :focus, :active) {
+    background: var(--ddc) !important
+}
+
+table tr.odd td {
+    background: var(--blc) !important;
+}
+
+table tr.even td {
+    background: var(--bdc) !important;
+}
+
+div.list-group a.list-group-item {
+    background: var(--bdc) !important;
+    border-radius: var(--smallrnd) !important;
+}
+
+div.alert.alert-danger {
+    border-radius: var(--medrnd);
+    color: var(--textcolor);
+    background-color: var(--alertd) !important;
+}
+
+div.panel.panel-info {
+    border-radius: var(--bigrnd) !important;
+}
+
+div.panel.panel-info div:only-child {
+    border-radius: var(--bigrnd) !important;
+}
+
+div.panel.panel-info div:first-child {
+    border-top-right-radius: var(--bigrnd) !important;
+    border-top-left-radius: var(--bigrnd) !important;
+}
+
+div.panel.panel-info div:last-child {
+    border-bottom-right-radius: var(--bigrnd) !important;
+    border-bottom-left-radius: var(--bigrnd) !important;
 }

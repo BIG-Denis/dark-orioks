@@ -1,6 +1,30 @@
-
 /* STUPID <a> SEMESTR CHANGER */
 div.well.ng-binding a {
     display: none;
     font-size: 0px;
+}
+
+
+/* remove word style */
+div.modal-dialog span {
+    all: unset !important;
+}
+
+div.modal-dialog p {
+    all: unset !important;
+}
+
+div.modal-dialog a {
+    background-color: transparent !important;
+}
+
+div.modal-dialog div.modal-content div.modal-body div.ng-binding div {
+    all: unset !important;
+}
+
+
+/* Shitty fix*/
+
+div#forang {
+    display: none;
 }

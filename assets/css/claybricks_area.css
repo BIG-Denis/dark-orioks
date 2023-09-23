@@ -10,14 +10,16 @@ table.table-condensed tbody tr td {
 }
 
 :root {
-    --ddc: #663b49;
-    --dlc: #835162;
-    --bdc: #192123;
-    --blc: #21292b;
-    --bmlc: #293133;
-    --hovergrayc: #312730;
-    --hrefc: #81B8EF;
-    --hrefconh: #629dd8;
+    --ddc: #a24c2a;
+    --dlc: #C2572C;
+    --bdc: transparent;
+    --gr1c: #1c1b19;
+    --gr2c: #201e1c;
+    --blc: #25231f;
+    --bmlc: #2b2823;
+    --hovergrayc: #312d27;
+    --hrefc: #FF844E;
+    --hrefconh: #c34f4f;
     --textcolor: #ffffff;
     --borderc: var(--textcolor);
     --smallrnd: 3px;
@@ -26,9 +28,9 @@ table.table-condensed tbody tr td {
     --largernd: 25px;
     --infrnd: 999px;
     --darkgreenc: #2b3a2e;
-    --darkredc: #812A00;
+    --darkredc: #810f00;
     --addbluec: #007C45;
-    --addredc: #A13D63;
+    --addredc: #97192c;
     --grade1c: #7a0c19;
     --grade2c: #df0707;
     --grade3c: #f48c06;
@@ -36,6 +38,7 @@ table.table-condensed tbody tr td {
     --grade5c: #4f702b;
     --alertc: var(--darkredc);
     --alertd: #9e6124;
+    --animtime: 4s;
 }
 
 @font-face {
@@ -108,9 +111,36 @@ a.avatar {
     border-color: var(--textcolor) !important
 }
 
+
+
 body {
-    background-color: var(--bdc) !important
+    background: var(--gr1c);
 }
+
+@keyframes move-it {
+    0% {
+      background-position: initial;
+    }
+    100% {
+      background-position: 50px 0px;
+    }
+  }
+  
+  body {  
+    background: repeating-linear-gradient(
+    45deg,
+    var(--gr1c),
+    var(--gr1c) 5%,
+    var(--gr2c) 5%,
+    var(--gr2c) 10%
+  );
+    background-size: 250px 250px !important;
+    animation: move-it var(--animtime) linear infinite !important;
+  }
+
+
+
+
 
 div.alert.alert-success {
     font-size: 16px !important;
