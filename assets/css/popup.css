@@ -97,3 +97,40 @@ iframe.donatebtn {
     margin-left: auto;
     margin-right: auto
 }
+
+div#beatynavdiv {
+    margin-top: 16px;
+}
+
+input#beatynavbar {
+    accent-color: var(--dlc);
+    size: 16px;
+}
+
+span#beatynavbardesc {
+    font-size: 22px;
+}
+
+div#form-div {
+    width: 85%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+button#form-btn {
+    background: transparent;
+    border: transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 20px 2px #ab13bc;
+}
+
+button#form-btn:hover {
+    background: transparent;
+    text-decoration: underline;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 20px 2px #20a441;
+}

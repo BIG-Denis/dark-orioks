@@ -28,3 +28,23 @@ div.modal-dialog div.modal-content div.modal-body div.ng-binding div {
 div#forang {
     display: none;
 }
+
+
+/*<div class="alert alert-warning" role="alert">
+<a href="/user/update-email" style="text-decoration: none; color: #FFFFFF">
+Каждый семестр требуется подтверждать Ваш адрес электронной почты. Нажмите здесь, чтобы узнать подробнее.
+</a>
+</div>*/
+
+div.alert.alert-warning {
+    background-color: #ca5e15 !important;
+    border-radius: var(--bigrnd);
+}
+
+/*div.alert.alert-warning * {
+    font-size: 1.2rem !important;
+}*/
+
+div.alert.alert-warning a {
+    color:  #ffffff !important;
+}

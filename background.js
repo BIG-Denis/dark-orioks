@@ -17,7 +17,7 @@ chrome.runtime.onInstalled.addListener(function() {
                 matches: ["https://orioks.miet.ru/*"],
                 excludeMatches: ["https://orioks.miet.ru/moodle/*"],
                 js: ["js/main.js", "js/" + theme_names[theme] + ".js"],
-                css: ["assets/css/main.css", "assets/css/" + theme_names[theme] + ".css"]
+                css: ["assets/css/main.css", "assets/css/" + theme_names[theme] + ".css", "assets/css/beaty_navbar.css"]
             }]);
         } else {
             chrome.scripting.registerContentScripts([{

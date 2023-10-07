@@ -824,3 +824,7 @@ div.panel.panel-info div:last-child {
     border-bottom-right-radius: var(--bigrnd) !important;
     border-bottom-left-radius: var(--bigrnd) !important;
 }
+
+nav.navbar-inverse.navbar * {
+    color: white !important;
+}

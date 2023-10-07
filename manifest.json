@@ -22,7 +22,7 @@
    "manifest_version": 3,
    "name": "Dark ORIOKS",
    "permissions": [ "activeTab", "tabs", "scripting", "storage" ],
-   "version": "1.4",
+   "version": "1.4.2",
    "web_accessible_resources": [ {
       "matches": [ "\u003Call_urls>" ],
       "resources": [ "assets/fonts/*" ]

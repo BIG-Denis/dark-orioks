@@ -21,16 +21,35 @@ $(function() {
     chrome.storage.sync.get("theme", function (opt) {
         $("#theme").val(opt.theme ? opt.theme : 0).selected = true;
     });
+    chrome.storage.sync.get("beatynav", function (opt) {
+        console.log(opt);
+        if (opt){
+            $("#beatynavbar").checked = true;
+        }
+        else {
+            $("#beatynavbar").checked = false;
+        }
+    });
+
+    let selectbeaty = $("#beatynavbar");
+    let beatyfication = selectbeaty.is(":checked");
+
+    chrome.storage.sync.get("beatynav", function (opt) {
+        console.log("AAA " + opt.beatynav);
+        $("#beatynavbar").prop("checked", opt.beatynav);
+    });
+
     let select = $("#theme");
     let theme = select.val();
     select.change(function () {
         let theme = select.val();
+        let beatyfication = selectbeaty.is(":checked");
         chrome.storage.sync.set({"theme": theme}, function() {});
         if (theme > 0) {
             chrome.scripting.updateContentScripts([{
                 id: "content-scripts",
                 js: ["js/main.js", "js/" + theme_names[theme] + ".js"],
-                css: ["assets/css/main.css", "assets/css/" + theme_names[theme] + ".css"]
+                css: (!beatyfication ? ["assets/css/main.css", "assets/css/" + theme_names[theme] + ".css"] : ["assets/css/main.css", "assets/css/" + theme_names[theme] + ".css", "assets/css/beaty_navbar.css"])
             }]);
         } else {
             chrome.scripting.updateContentScripts([{
@@ -46,6 +65,35 @@ $(function() {
             }
         });
     });
+
+
+    selectbeaty.change(function () {
+        let theme = select.val();
+        let selectbeaty = $("#beatynavbar");
+        let beatyfication = selectbeaty.is(":checked");
+        console.log(beatyfication);
+        chrome.storage.sync.set({"beatynav": beatyfication}, function() {});
+        if (theme > 0) {
+            chrome.scripting.updateContentScripts([{
+                id: "content-scripts",
+                js: ["js/main.js", "js/" + theme_names[theme] + ".js"],
+                css: (!beatyfication ? ["assets/css/main.css", "assets/css/" + theme_names[theme] + ".css"] : ["assets/css/main.css", "assets/css/" + theme_names[theme] + ".css", "assets/css/beaty_navbar.css"])
+            }]);
+        } else {
+            chrome.scripting.updateContentScripts([{
+                id: "content-scripts",
+                js: ["js/classic.js"],
+                css: ["assets/css/classic.css"]
+            }]);
+        }
+        $("#description").html(theme_descs[theme]);
+        chrome.tabs.query({url: "https://orioks.miet.ru/*"}, function (tabs) {
+            for (let i = 0; i < tabs.length; i++) {
+                chrome.tabs.reload(tabs[i].id);
+            }
+        });
+    });
+
 });
 
 
@@ -63,4 +111,9 @@ $(function() {
     buttons[0].onclick = () => window.open('https://vk.com/unsigned_int','_blank');
     buttons[1].onclick = () => window.open('https://github.com/BIG-Denis/dark-orioks','_blank');
     buttons[2].onclick = () => window.open('https://gitlab.com/ChinchillaY/dark-orioks','_blank');
+});
+
+$(function() {
+    form_btn = document.getElementById("form-btn");
+    form_btn.onclick = () => window.open('https://forms.gle/nNu9jAdyVvHbf7rf8', '_blank');
 });
