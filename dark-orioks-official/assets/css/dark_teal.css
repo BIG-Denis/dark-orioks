@@ -1,0 +1,811 @@
+select,
+textarea {
+    border-radius: var(--smallrnd) !important
+}
+
+*,
+div.panel-body h4,
+table.table-condensed tbody tr td {
+    font-family: 'Source Sans Pro', sans-serif
+}
+
+:root {
+    --ddc: #00564D;
+    --dlc: #00897B;
+    --bdc: #222222;
+    --blc: #2b2b2b;
+    --bmlc: #3b3b3b;
+    --hovergrayc: #424242;
+    --borderc: #e8e8e8;
+    --hrefc: #68B7DE;
+    --hrefconh: #ABD7ED;
+    --textcolor: white;
+    --smallrnd: 5px;
+    --medrnd: 10px;
+    --bigrnd: 15px;
+    --largernd: 25px;
+    --infrnd: 999px;
+    --darkgreenc: #223322;
+    --darkredc: #332222;
+    --addbluec: #0084B3;
+    --addredc: #F06449;
+    --grade1c: #7a0c19;
+    --grade2c: #df0707;
+    --grade3c: #f48c06;
+    --grade4c: #80ac5f;
+    --grade5c: #4f702b;
+    --alertc: #3c2b2b;
+    --alertd: #9e6124;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('chrome-extension://__MSG_@@extension_id__/assets/fonts/SourceSansPro-SemiBold.woff2')
+}
+
+* {
+    color: var(--textcolor)
+}
+
+nav.navbar-inverse.navbar div.container div.collapse.navbar-collapse ul.navbar-nav.nav li a:is(:hover, :focus, :active) {
+    color: var(--textcolor) !important;
+}
+
+input[type=email],
+input[type=email]:is(::placeholder, :placeholder-shown, :hover, :focus, :active, ::backdrop, ::first-line, :valid, :disabled, :invalid),
+input[type=text],
+input[type=text]:is(::placeholder, :placeholder-shown, :hover, :focus, :active, ::backdrop, ::first-line, :valid, :disabled, :invalid) {
+    background-color: var(--bmlc) !important;
+    color: var(--textcolor);
+    border-radius: var(--medrnd)
+}
+
+select {
+    background: var(--bmlc) !important;
+    color: var(--textcolor) !important
+}
+
+*>*>*>*>*>*>*>*>*>a,
+*>*>*>*>*>*>*>*>a,
+*>*>*>*>*>*>*>a,
+*>*>*>*>*>*>a,
+*>*>*>*>*>a,
+*>*>*>*>a,
+*>*>*>a,
+*>*>a,
+*>a,
+a,
+div.well.ng-binding p a {
+    color: var(--hrefc) !important
+}
+
+.text-info,
+.text-success,
+a.avatar,
+a.btn,
+div.author,
+nav a,
+nav a:hover,
+textarea {
+    color: var(--textcolor) !important
+}
+
+a.btn {
+    border-radius: var(--medrnd)
+}
+
+a.btn.pull-right-md.pull-right-lg,
+span.bootstrap-switch-label {
+    background-color: var(--blc) !important
+}
+
+textarea {
+    background: var(--blc) !important
+}
+
+a.avatar {
+    background: var(--bmlc) !important;
+    border-color: var(--textcolor) !important
+}
+
+body {
+    background-color: var(--bdc) !important
+}
+
+div.alert.alert-success {
+    font-size: 16px !important;
+    background: var(--darkgreenc) !important;
+    border-style: none !important
+}
+
+span.label.label-danger {
+    background: var(--addredc) !important
+}
+
+#tbodyUserFiles a,
+a,
+a.pointer,
+div.list-group a,
+div.resumable-drop a u,
+li a,
+table.table.table-condensed tbody tr td.collapser a.newColor,
+table.table.table-condensed tbody tr.collapse td a,
+td a.glyphicon-eye-open {
+    color: var(--hrefc)
+}
+
+*>a:is(:hover, :focus, :active) {
+    color: var(--hrefconh) !important
+}
+
+#bp,
+#to_top>*,
+div.container.margin-top div.well>*,
+div.container.margin-top div.well>*>*,
+div.container.margin-top div.well>*>*>*,
+div.container.margin-top div.well>*>*>*>*,
+div.dropdown-menu-left div,
+div.dropdown-menu-left>* {
+    color: var(--textcolor) !important
+}
+
+td span.grade {
+    width: 45px !important
+}
+
+#bp {
+    background: var(--bmlc) !important;
+    font-size: 12px !important;
+    text-align: center !important;
+    width: 50px !important
+}
+
+nav:not(.dropdown_toggle) {
+    background: var(--dlc)
+}
+
+div#auth form#login-form,
+div.dropdown-menu-left div,
+div.list-group div.list-group-item,
+div.panel.panel-info>div,
+table.ui-datepicker-calendar,
+tr.ng-scope,
+ul.breadcrumb {
+    background: var(--blc)
+}
+
+:not(span.caret) {
+    border-color: var(--borderc) !important
+}
+
+nav ul a:focus,
+nav ul a:hover,
+nav ul li.active a,
+nav ul li.dropdown.open a.dropdown-toggle {
+    background-color: var(--ddc) !important
+}
+
+nav ul.dropdown-menu a,
+nav ul.dropdown-menu li.divider {
+    background-color: var(--dlc) !important
+}
+
+a#linkschedule:is(:hover, :focus, :active) {
+    color: var(--textcolor) !important
+}
+
+div.notification:is(:hover, :focus, :active),
+div.notification:is(:hover, :focus, :active)>*,
+div.notification:is(:hover, :focus, :active)>*>* {
+    background: var(--bmlc) !important
+}
+
+div.notification-icon.fa.fa-info.bg-info:is(:hover, :focus, :active) {
+    background: var(--hovergrayc) !important
+}
+
+span.label-info,
+span.label-warning,
+ul.breadcrumb li.active {
+    color: var(--textcolor)
+}
+
+div.notification-more.notification-more-all:is(:hover, :focus, :active) {
+    background: var(--bmlc)
+}
+
+ul.breadcrumb {
+    border-radius: var(--infrnd)
+}
+
+@media only screen and (min-width:768px) {
+    ul.breadcrumb {
+        font-size: 12px;
+        padding-left: 30px;
+        padding-right: 30px
+    }
+}
+
+li a:is(:hover, :focus, :active) {
+    color: var(--hrefconh)
+}
+
+ul.breadcrumb a:focus {
+    color: var(--hrefconh)
+}
+
+div.col-md-4 div.panel-default,
+div.modal-dialog div.modal-content,
+div.well {
+    background: var(--blc);
+    border-radius: var(--bigrnd)
+}
+
+div.well.ng-binding p a {
+    display: block;
+    font-size: 16px
+}
+
+span.label {
+    border-radius: var(--infrnd) !important;
+    font-size: 10px
+}
+
+span.label-warning {
+    background: var(--addredc)
+}
+
+span.label-info {
+    background: var(--addbluec)
+}
+
+div.panel-body h4 {
+    font-size: 20px;
+    margin-left: 5px
+}
+
+table.table-condensed tbody tr td {
+    font-size: 13px !important
+}
+
+div.list-group div.list-group-item:first-child {
+    border-top-right-radius: var(--bigrnd);
+    border-top-left-radius: var(--bigrnd)
+}
+
+div.list-group div.list-group-item:last-child {
+    border-bottom-right-radius: var(--bigrnd);
+    border-bottom-left-radius: var(--bigrnd)
+}
+
+div.list-group div.list-group-item:only-child {
+    border-radius: 0
+}
+
+div.panel.panel-default.ng-scope div.panel-body table.table.table-borderless.table-condensed tbody tr:is(:hover, :focus, :active) {
+    background: var(--blc) !important
+}
+
+tr.discussion-label-span,
+tr.pointer {
+    background: var(--bdc)
+}
+
+tr.discussion-label-span.success>td,
+tr.success.ng-scope,
+tr.success.ng-scope td {
+    background: var(--darkgreenc) !important
+}
+
+td.text-right span {
+    width: 120px !important
+}
+
+/* tr.danger.ng-scope td>* {
+    background: var(--darkredc) !important;
+    color: var(--textcolor) !important
+} */
+
+div.modal-footer button {
+    background: var(--dlc);
+    color: var(--textcolor);
+    border-radius: var(--medrnd);
+    border-style: none
+}
+
+div.modal-footer button:is(:hover, :focus, :active) {
+    background: var(--ddc) !important
+}
+
+div.modal-footer a.pull-left {
+    background: var(--bmlc);
+    color: var(--textcolor);
+    border-radius: var(--medrnd)
+}
+
+div.row div.badge,
+span.pull-right {
+    background: var(--bmlc) !important;
+    color: var(--textcolor);
+    font-size: 12px
+}
+
+table.table.table-hover tr.info td,
+table.table.table-hover tr:focus td,
+table.table.table-hover tr:hover td {
+    background-color: var(--hovergrayc) !important
+}
+
+tr.active td {
+    background: var(--bdc) !important
+}
+
+select.input-sm {
+    background: var(--blc);
+    color: var(--textcolor);
+    border-radius: var(--smallrnd) !important
+}
+
+span.grade {
+    border-radius: 4px
+}
+
+span.grade_1 {
+    background: var(--grade1c) !important
+}
+
+span.grade_2 {
+    background: var(--grade2c) !important
+}
+
+span.grade_3 {
+    background: var(--grade3c) !important
+}
+
+span.grade_4 {
+    background: var(--grade4c) !important
+}
+
+span.grade_5 {
+    background: var(--grade5c) !important
+}
+
+td:has(> span.grade) {
+    text-align: center;
+    font-size: 16px
+}
+
+td.mvb {
+    font-size: 14px
+}
+
+#to_top {
+    opacity: .1
+}
+
+div.pull-right button.btn-info,
+div.pull-right button.btn-info:is(:hover, :focus, :active) {
+    background-color: var(--addbluec);
+    min-width: 60px;
+    border-top-left-radius: var(--smallrnd);
+    border-bottom-left-radius: var(--smallrnd);
+    border-style: none;
+    padding: 6px, 8px
+}
+
+div.pull-right button.btn-danger,
+div.pull-right button.btn-danger:is(:hover, :focus, :active) {
+    background-color: var(--addredc);
+    min-width: 60px;
+    border-top-right-radius: var(--smallrnd);
+    border-bottom-right-radius: var(--smallrnd);
+    border-style: none;
+    padding: 6px, 8px
+}
+
+div.well button.btn-success {
+    background: var(--dlc);
+    border-radius: var(--medrnd);
+    border: none
+}
+
+div.list-group div.list-group-item.bg-grey.pointer,
+div.resumable-drop,
+div.search-form {
+    border-radius: var(--bigrnd)
+}
+
+div.well button.btn-success:is(:hover, :focus, :active) {
+    background: var(--ddc) !important;
+    border-radius: var(--medrnd)
+}
+
+div.resumable-drop {
+    background: var(--blc);
+    color: var(--textcolor)
+}
+
+ul.nav-tabs li.active a,
+ul.nav-tabs li.active a:is(:hover, :focus, :active) {
+    background: var(--bmlc) !important;
+    color: var(--textcolor)
+}
+
+ul.nav-tabs li a:is(:hover, :focus, :active) {
+    background: var(--bmlc) !important;
+    color: var(--textcolor)
+}
+
+button.btn.btn-default,
+button.btn.btn-default:is(:hover, :focus, :active) {
+    color: var(--textcolor);
+    border-radius: var(--medrnd)
+}
+
+button.btn-xs.btn-primary.file-picker-select {
+    color: var(--textcolor);
+    background: var(--addbluec);
+    border-radius: var(--smallrnd);
+    border-style: none
+}
+
+div#auth {
+    border-radius: var(--largernd)
+}
+
+button#loginbut,
+div.baseRow div.alert.alert-danger {
+    border-radius: var(--medrnd);
+    color: var(--textcolor)
+}
+
+div#auth div#authheader {
+    background: var(--dlc);
+    border-top-left-radius: var(--largernd);
+    border-top-right-radius: var(--largernd)
+}
+
+div#auth div#authfooter {
+    background: var(--dlc);
+    border-bottom-left-radius: var(--largernd);
+    border-bottom-right-radius: var(--largernd)
+}
+
+div#auth div#authheader h1 {
+    color: var(--textcolor) !important;
+    font-size: 32px
+}
+
+div#auth div#authfooter h2,
+div#auth div#authheader h2 {
+    color: var(--textcolor) !important;
+    font-size: 16px
+}
+
+input#loginform-rememberme {
+    accent-color: var(--dlc);
+    background-color: var(--bmlc)
+}
+
+button#loginbut {
+    background: var(--dlc)
+}
+
+input.form-control:is(::placeholder, :placeholder-shown, :hover, :focus, :active, ::backdrop, ::first-line, :valid) {
+    background-color: var(--bmlc) !important;
+    border-radius: var(--medrnd)
+}
+
+div.baseRow div.alert.alert-danger {
+    background-color: var(--alertc);
+    font-size: 14px;
+    background-color: var(--alertc)
+}
+
+div.panel-collapse>div:first-child {
+    border-top: none !important
+}
+
+div.list-group div.panel-collapse>div:is(:hover, :focus, :active) {
+    background: var(--bmlc) !important
+}
+
+div.list-group div.panel-collapse div div span.label.label-default {
+    background-color: var(--blc);
+    color: var(--textcolor)
+}
+
+div.list-group div.panel-collapse div div span.label.label-success {
+    background-color: var(--darkgreenc);
+    color: var(--textcolor)
+}
+
+button.btn-xs#collapseAll,
+input#faqcategory-key_words,
+select#faqcategory-category {
+    background: var(--blc);
+    color: var(--textcolor);
+    border-radius: var(--smallrnd)
+}
+
+button.btn.btn-primary {
+    background: var(--dlc);
+    color: var(--textcolor);
+    border: none;
+    border-radius: var(--medrnd)
+}
+
+button.btn.btn-primary:is(:hover, :focus, :active) {
+    background: var(--ddc);
+    color: var(--textcolor);
+    border-radius: var(--medrnd)
+}
+
+div.panel-group#accordion div.panel.panel-default {
+    background: var(--blc) !important;
+    color: var(--textcolor) !important;
+    border-radius: var(--bigrnd)
+}
+
+div.panel-group#accordion div.panel.panel-default div.panel-heading {
+    background: var(--blc);
+    color: var(--textcolor);
+    border-radius: var(--bigrnd)
+}
+
+div.panel-group#accordion div.panel.panel-default div.panel-collapse:is(:hover, :focus, :active) {
+    background-color: var(--blc) !important;
+    border-radius: var(--bigrnd)
+}
+
+table.table.table-condensed tbody tr:is(:hover, :focus, :active) {
+    background: var(--bmlc)
+}
+
+a.btn.btn-success,
+button.btn.btn-success {
+    background: var(--dlc);
+    border-radius: var(--medrnd);
+    color: var(--textcolor);
+    border-style: none
+}
+
+a.btn.btn-success:is(:hover, :focus, :active) {
+    background: var(--ddc) !important
+}
+
+span.bootstrap-switch-handle-on.bootstrap-switch-primary {
+    background: var(--addbluec) !important
+}
+
+span.bootstrap-switch-handle-off.bootstrap-switch-default {
+    background: var(--addredc) !important;
+    color: var(--textcolor) !important
+}
+
+button.btn.btn-success:is(:hover, :focus, :active) {
+    background: var(--ddc) !important
+}
+
+div#ui-datepicker-div {
+    background-color: var(--blc);
+    color: var(--textcolor);
+    background: var(--blc) !important
+}
+
+table.ui-datepicker-calendar tbody tr td a {
+    background: var(--bmlc) !important;
+    color: var(--textcolor) !important
+}
+
+div.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+    background: var(--bmlc)
+}
+
+form#w0 a.btn.btn-secondary {
+    background: var(--bmlc);
+    color: var(--textcolor);
+    border-radius: var(--medrnd);
+    border-style: none
+}
+
+div.panel.panel-info {
+    border-radius: var(--infrnd);
+    border-color: var(--bdc) !important
+}
+
+div.panel.panel-info div.panel-heading {
+    border-top-left-radius: var(--bigrnd);
+    border-top-right-radius: var(--bigrnd);
+    border-style: none !important
+}
+
+div.panel.panel-info div.panel-footer {
+    border-bottom-left-radius: var(--bigrnd);
+    border-bottom-right-radius: var(--bigrnd);
+    border-style: none !important
+}
+
+div.form-group a.btn.btn-primary {
+    background: var(--dlc);
+    border-style: none
+}
+
+img.img-responsive {
+    display: none
+}
+
+div.alert.alert-danger {
+    border-radius: var(--bigrnd);
+    border-style: none;
+    font-size: 16px
+}
+
+tr.discipline_checkboxes.ng-scope {
+    background: 0 0
+}
+
+div.panel.panel-default {
+    background: 0 0;
+    border-radius: var(--medrnd)
+}
+
+div.panel-heading.click {
+    background: var(--blc);
+    color: var(--textcolor);
+    border-top-left-radius: var(--medrnd);
+    border-top-right-radius: var(--medrnd)
+}
+
+tr.danger.ng-scope,
+tr.danger.ng-scope td,
+tr.danger.ng-scope td b,
+tr.danger.ng-scope:is(:hover, :focus, :active),
+tr.danger.ng-scope:is(:hover, :focus, :active) td,
+tr.danger.ng-scope:is(:hover, :focus, :active) td b,
+tr.danger.ng-scope td:is(:hover, :focus, :active),
+tr.danger.ng-scope td:is(:hover, :focus, :active) b,
+tr.danger.ng-scope td b:is(:hover, :focus, :active),
+tr.warning td {
+    background: var(--darkredc) !important
+}
+
+div.modal-dialog div.modal-content div.modal-header.bg-success {
+    border-top-left-radius: var(--bigrnd) !important;
+    border-top-right-radius: var(--bigrnd) !important;
+    background: var(--darkgreenc) !important
+}
+
+button.btn-success,
+button.btn-success:is(:hover, :focus, :active) {
+    background: var(--dlc) !important;
+    border-radius: var(--medrnd) !important;
+    border-style: none
+}
+
+ul.list-group li,
+ul.list-group li span {
+    background: var(--blc);
+    color: var(--textcolor) !important
+}
+
+ul.list-group li:first-child {
+    border-top-left-radius: var(--bigrnd);
+    border-top-right-radius: var(--bigrnd)
+}
+
+ul.list-group li:last-child {
+    border-bottom-left-radius: var(--bigrnd);
+    border-bottom-right-radius: var(--bigrnd)
+}
+
+table.table.table-condensed.table-striped tbody tr td {
+    background: var(--bdc)
+}
+
+table.table.table-condensed.table-striped tbody tr td div.pull-right button.btn-xs.btn-danger.removeProject {
+    border-radius: var(--smallrnd);
+    background: var(--addredc)
+}
+
+table.table.table-condensed.table-striped tbody tr td i.label.label-warning {
+    color: var(--textcolor);
+    background: var(--bmlc)
+}
+
+div.alert.alert-info {
+    font-size: 16px;
+    background: var(--darkgreenc);
+    border-color: var(--borderc);
+    border-radius: var(--medrnd)
+}
+
+button.btn-xs.btn-danger,
+button.btn-xs.btn-info,
+button.btn.btn-info {
+    border-radius: var(--smallrnd) !important
+}
+
+button.btn.btn-info {
+    color: var(--textcolor);
+    background: var(--addbluec)
+}
+
+select#dis_semester {
+    width: 300px
+}
+
+div.selectize-input {
+    background: var(--bmlc) !important;
+    color: var(--textcolor)
+}
+
+div.selectize-dropdown,
+div.selectize-dropdown div.selectize-dropdown-content div.option {
+    color: var(--textcolor) !important;
+    background: var(--bmlc) !important
+}
+
+div.create {
+    color: var(--textcolor) !important
+}
+
+div.create.active,
+div.create:is(:hover, :focus, :active) {
+    color: var(--textcolor) !important;
+    background: var(--hovergrayc)
+}
+
+tbody#tbodyUserFiles tr td div.pull-right button.btn-xs.btn-info.link {
+    border-radius: 0 !important;
+    border-top-left-radius: var(--smallrnd) !important;
+    border-bottom-left-radius: var(--smallrnd) !important
+}
+
+tbody#tbodyUserFiles tr td div.pull-right button.btn-xs.btn-danger.delete {
+    border-radius: 0 !important;
+    border-top-right-radius: var(--smallrnd) !important;
+    border-bottom-right-radius: var(--smallrnd) !important
+}
+
+nav.navbar-inverse.navbar div.container div ul.navbar-nav.nav li ul.dropdown-menu li a:is(:hover, :focus, :active),
+nav.navbar-inverse.navbar div.container div ul.navbar-nav.nav li ul.dropdown-menu li:is(:hover, :focus, :active) {
+    background: var(--ddc) !important
+}
+
+table tr.odd td {
+    background: var(--blc) !important;
+}
+
+table tr.even td {
+    background: var(--bdc) !important;
+}
+
+div.list-group a.list-group-item {
+    background: var(--bdc) !important;
+    border-radius: var(--smallrnd) !important;
+}
+
+div.alert.alert-danger {
+    border-radius: var(--medrnd);
+    color: var(--textcolor);
+    background-color: var(--alertd) !important;
+}
+
+div.panel.panel-info {
+    border-radius: var(--bigrnd) !important;
+}
+
+div.panel.panel-info div:only-child {
+    border-radius: var(--bigrnd) !important;
+}
+
+div.panel.panel-info div:first-child {
+    border-top-right-radius: var(--bigrnd) !important;
+    border-top-left-radius: var(--bigrnd) !important;
+}
+
+div.panel.panel-info div:last-child {
+    border-bottom-right-radius: var(--bigrnd) !important;
+    border-bottom-left-radius: var(--bigrnd) !important;
+}

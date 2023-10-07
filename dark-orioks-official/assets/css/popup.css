@@ -1,0 +1,136 @@
+:root {
+    --ddc: #00564D;
+    --dlc: #00897B;
+    --bdc: #222222;
+    --blc: #2b2b2b;
+    --bmlc: #3b3b3b;
+    --hrefc: #68B7DE;
+    --hrefconh: #ABD7ED;
+    --red_btn: #f04124
+}
+
+* {
+    color: #fff
+}
+
+p {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    font-size: 16px !important;
+    max-width: 90% !important
+}
+
+p#description {
+    margin-bottom: 20px !important
+}
+
+.header {
+    font-size: 22px
+}
+
+select#theme,
+select#theme:is(:hover, :focus, :active, :visited, :focus-within, :focus-visible, :checked, ::after) {
+    background: var(--blc) !important;
+    color: #fff !important;
+    border-radius: 8px !important;
+    width: 75% !important;
+    height: 40px !important;
+    font-size: 18px !important;
+    border: 1px solid #fff !important
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 28px !important
+}
+
+div.settings {
+    min-width: 250px;
+    margin-top: 10px
+}
+
+body {
+    background: var(--bdc);
+    margin: 0 !important
+}
+
+div.container {
+    min-height: 200px;
+    min-width: 400px;
+    border: 5px solid #646464
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0
+}
+
+ul li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+img.logo {
+    max-width: 32px;
+    max-height: 32px
+}
+
+button.logobtn {
+    width: 48px;
+    height: 48px;
+    border-style: none !important;
+    background: var(--blc);
+    border-radius: 15px
+}
+
+button.logobtn:is(:hover, :focus, :active) {
+    background: var(--bmlc)
+}
+
+img {
+    pointer-events: none
+}
+
+iframe.donatebtn {
+    margin-left: auto;
+    margin-right: auto
+}
+
+div#beatynavdiv {
+    margin-top: 16px;
+}
+
+input#beatynavbar {
+    accent-color: var(--dlc);
+    size: 16px;
+}
+
+span#beatynavbardesc {
+    font-size: 22px;
+}
+
+div#form-div {
+    width: 85%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+button#form-btn {
+    background: transparent;
+    border: transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 20px 2px #ab13bc;
+}
+
+button#form-btn:hover {
+    background: transparent;
+    text-decoration: underline;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 20px 2px #20a441;
+}

@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Casual Contact';
+    src: url('chrome-extension://__MSG_@@extension_id__/assets/fonts/CasualContactRegular.woff2')
+}
+
+* {
+    font-family: 'Casual Contact', sans-serif;
+}
+
+:root {
+    --navbar_color: #b35900;
+    --navbar_hover: #804000;
+}
+
+/*---NAVBAR---*/
+nav.navbar {
+    background-color: var(--navbar_color);
+}
+
+/*NAVBAR Header*/
+nav.navbar div.container div.navbar-header a.navbar-brand {
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+
+/*NAVBAR Element*/
+nav.navbar div.container div.collapse ul.nav li a {
+    letter-spacing: 0.025rem;
+}
+
+nav.navbar div.container ul li {
+    background-color: var(--navbar_color);
+}
+
+nav.navbar div.container ul li a:is(:hover, :focus, :active) {
+    background-color: var(--navbar_hover);
+}
+
+nav.navbar div.container ul li.dropdown a:is(:hover, :focus, :active) {
+    background-color: var(--navbar_hover);
+}
+
+nav.navbar div.container ul li.divider {
+    background: var(--navbar_color);
+}
+
+/*NAVBAR Calendar govna*/
+nav.navbar div.container div.collapse ul.nav li.active a {
+    background: var(--navbar_hover);
+}
+
+/*---BREADCRUMB---*/
+div.container ul.breadcrumb {
+    border-radius: 0.8rem;
+}
+
+div.container ul.breadcrumb li a {
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+}
+
+div.container ul.breadcrumb li::before {
+    font-size: 1.1rem;
+}
+
+/*---MARKS---*/
+/* tbody tr td span.grade_4.grade {
+} */

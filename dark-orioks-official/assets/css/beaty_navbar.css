@@ -1,0 +1,13 @@
+
+nav.navbar-inverse.navbar {
+    width: 90%;
+    margin: auto;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+nav.navbar-inverse.navbar > div.container {
+    width: 95%;
+    margin: auto;
+}
+

@@ -1,0 +1,30 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "assets/images/icon/icon128x128.png",
+         "16": "assets/images/icon/icon16x16.png",
+         "32": "assets/images/icon/icon32x32.png",
+         "48": "assets/images/icon/icon48x48.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "description": "Привнесите в свой ОРИОКС набор из нескольких тёмных тем. Выбирай свою любимую. Пользуйся и люби МИЭТ!",
+   "host_permissions": [ "https://orioks.miet.ru/*" ],
+   "icons": {
+      "128": "assets/images/icon/icon128x128.png",
+      "16": "assets/images/icon/icon16x16.png",
+      "32": "assets/images/icon/icon32x32.png",
+      "48": "assets/images/icon/icon48x48.png"
+   },
+   "manifest_version": 3,
+   "name": "Dark ORIOKS",
+   "permissions": [ "activeTab", "tabs", "scripting", "storage" ],
+   "version": "1.4.2",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "assets/fonts/*" ]
+   } ]
+}
